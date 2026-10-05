@@ -1,0 +1,21 @@
+services:
+  c-sync:
+    build: .
+    image: c-sync
+    ports:
+      - "8501:8501"
+    # OPENAI_API_KEY (Ask page, "Draft the fix") and GITHUB_TOKEN. Optional:
+    # without a key C-Sync still shows the whole recorded run.
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      # instructor decisions (Approve / Request changes / Reject) survive restarts
+      - reviews:/data
+      # the local course index, for the Ask page and fix drafts; build it first with
+      # python 02_src/curriculum_ingest.py --curriculum 01_data/curriculum --db ./vectorstore
+      - ./vectorstore:/app/vectorstore
+    restart: unless-stopped
+
+volumes:
+  reviews:

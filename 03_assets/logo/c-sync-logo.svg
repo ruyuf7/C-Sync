@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200" role="img" aria-label="C-sync: Sync education with real-world trends">
+  <defs>
+    <linearGradient id="cs-arc" x1="100" y1="10" x2="20" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="0.5" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="cs-sweep" cx="60" cy="60" r="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67e8f9" stop-opacity="0"/>
+      <stop offset="1" stop-color="#67e8f9" stop-opacity="0.45"/>
+    </radialGradient>
+    <linearGradient id="cs-word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+    <filter id="cs-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="200" rx="24" fill="#080c17"/>
+  <g transform="translate(24 20) scale(1.3333)">
+    <g fill="none" stroke="#67e8f9" stroke-opacity="0.28" stroke-width="1">
+      <circle cx="60" cy="60" r="31"/>
+      <circle cx="60" cy="60" r="19"/>
+      <path d="M60 27v66M27 60h66" stroke-opacity="0.16"/>
+    </g>
+    <path d="M60 60 L81.9 34 A34 34 0 0 1 91.6 47.3 Z" fill="url(#cs-sweep)"/>
+    <path d="M91.1 28.9 A44 44 0 1 0 91.1 91.1" fill="none" stroke="url(#cs-arc)"
+          stroke-width="13" stroke-linecap="round" filter="url(#cs-glow)"/>
+    <g filter="url(#cs-glow)">
+      <line x1="60" y1="60" x2="81.9" y2="34" stroke="#e0f2fe" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="81.9" cy="34" r="2.6" fill="#67e8f9"/>
+      <circle cx="60" cy="60" r="4.2" fill="#f0f9ff"/>
+    </g>
+  </g>
+  <text x="212" y="112" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="86" font-weight="700"
+        letter-spacing="-1"><tspan fill="#f8fafc">C-</tspan><tspan fill="url(#cs-word)">sync</tspan></text>
+  <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="500"
+     letter-spacing="4.5" fill="#cbd5e1">
+    <text x="216" y="146">SYNC EDUCATION WITH</text>
+    <text x="216" y="168">REAL-WORLD TRENDS</text>
+  </g>
+</svg>

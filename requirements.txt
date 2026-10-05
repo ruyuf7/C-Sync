@@ -1,0 +1,9 @@
+chromadb==1.5.9
+python-pptx==1.0.2
+pdfplumber==0.11.10
+feedparser==6.0.14
+requests==2.34.2
+pydantic==2.13.5
+openai==3.7.0
+python-dotenv==1.1.0
+streamlit==1.62.0

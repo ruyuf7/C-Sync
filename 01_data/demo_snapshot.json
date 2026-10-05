@@ -1,0 +1,3709 @@
+{
+  "captured_at": "2026-09-21T19:32:16.738863+00:00",
+  "source_signals": "01_data/signals_2026-09-21.json",
+  "signals_in_file": 74,
+  "clusters_total": 57,
+  "clusters_processed": 30,
+  "duplicates_collapsed": 1,
+  "tier_counts": {
+    "update_existing_material": 6,
+    "add_optional_content": 7,
+    "watch": 16
+  },
+  "recommendations": [
+    {
+      "trend": "langchain-ai/langchain: langchain-core==1.6.4",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.4",
+          "note": "langchain-ai/langchain: langchain-core==1.6.4  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.3",
+          "note": "langchain-ai/langchain: langchain-core==1.6.3  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain",
+          "note": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.4",
+          "note": "verify_release('langchain-ai/langchain', 'langchain-core==1.6.4') CONFIRMED release langchain-core==1.6.4 (published 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "update_existing_material",
+      "action_plan": [
+        "update the import to the new module path in cell 36 of the Lab LangChain notebook to reflect the latest version of the library.",
+        "ensure that any references to `langchain_core` are updated to match the new module structure as per the latest documentation.",
+        "review the code in the cell for any deprecated functions or methods that may need to be replaced with their current equivalents.",
+        "test the updated code to confirm that it runs successfully without errors after the changes are made."
+      ],
+      "match": {
+        "week": 3,
+        "topic": "Lab LangChain wikipedia(studentVersion)",
+        "source_file": "Lab_LangChain_wikipedia(studentVersion).ipynb",
+        "slide_number": 36,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.502,
+        "exact_match": "runnablewithmessagehistory",
+        "content_type": "lab",
+        "citation": "Week 3 / Lab: Lab LangChain wikipedia(studentVersion) / cell 36"
+      },
+      "total_score": 4.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain-ai/langchain"
+              },
+              "result_summary": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "langchain-ai/langchain",
+                "version": "langchain-core==1.6.4"
+              },
+              "result_summary": "verify_release('langchain-ai/langchain', 'langchain-core==1.6.4') CONFIRMED release langchain-core==1.6.4 (published 2026-09-21)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The first signal claims that the repository `langchain-ai/langchain` has a release for `langchain-core==1.6.4`. I will first check if the repository exists and is established by calling the `github_lookup` tool.\n\nLet's proceed with that.",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain-ai/langchain"
+              },
+              "observation": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "iteration": 2,
+              "thought": "The repository `langchain-ai/langchain` exists and is well-established, with 146,323 stars and a recent push on September 14, 2026. Now, I will check if the specific version `langchain-core==1.6.4` has been released by calling the `verify_release` tool. \n\nLet's proceed with that.",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "langchain-ai/langchain",
+                "version": "langchain-core==1.6.4"
+              },
+              "observation": "verify_release('langchain-ai/langchain', 'langchain-core==1.6.4') CONFIRMED release langchain-core==1.6.4 (published 2026-09-21)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The specific version `langchain-core==1.6.4` has been released for the repository `langchain-ai/langchain`. The release was published on September 21, 2026, and is not a pre-release.\n\nI have confirmed the existence of the repository and the claimed version. No further tool calls are necessary.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "chat message history",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Lab LangChain wikipedia(studentVersion) / cell 36 (0.585) | Week 3 / Lab: Demo LangChain Intro(Solution) / cell 33 (0.545) | Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 65 (0.474)"
+            },
+            {
+              "n": 2,
+              "query": "RunnableWithMessageHistory",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Intro(Solution) / cell 33 (exact:runnablewithmessagehistory) | Week 3 / Lab: Demo LangChain Intro(Solution) / cell 34 (exact:runnablewithmessagehistory) | Week 3 / Lab: Lab LangChain wikipedia(studentVersion) / cell 36 (exact:runnablewithmessagehistory)"
+            }
+          ],
+          "reason": "The curriculum teaches using 'RunnableWithMessageHistory' and 'ChatMessageHistory', which are now affected by the deprecation of chat message history in the new version, making the current examples potentially outdated or incorrect.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "openai/openai-python: v3.16.0",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.16.0",
+          "note": "openai/openai-python: v3.16.0  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python",
+          "note": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.16.0",
+          "note": "verify_release('openai/openai-python', 'v3.16.0') CONFIRMED release v3.16.0 (published 2026-09-18)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "update_existing_material",
+      "action_plan": [
+        "Update the lecture slide on slide 53 of \"Agents for Real Tasks.pptx\" to include the latest version of the OpenAI Python library, ensuring it reflects the transition to version 3.16.0.",
+        "Revise the text to clarify the significance of the Model Context Protocol (MCP) in the context of AI agents, emphasizing its role in standardizing tool integrations and enhancing security.",
+        "Add a note about the implications of MCP for future developments in AI agent capabilities, highlighting the shift from custom-built integrations to standardized approaches."
+      ],
+      "match": {
+        "week": 4,
+        "topic": "Agents for Real Tasks.pptx",
+        "source_file": "Agents for Real Tasks.pptx.pdf",
+        "slide_number": 53,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": null,
+        "exact_match": "mcp",
+        "content_type": "slides",
+        "citation": "Week 4 / Agents for Real Tasks.pptx / slide 53"
+      },
+      "total_score": 4.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai/openai-python"
+              },
+              "result_summary": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "openai/openai-python",
+                "version": "v3.16.0"
+              },
+              "result_summary": "verify_release('openai/openai-python', 'v3.16.0') CONFIRMED release v3.16.0 (published 2026-09-18)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai/openai-python"
+              },
+              "observation": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "openai/openai-python",
+                "version": "v3.16.0"
+              },
+              "observation": "verify_release('openai/openai-python', 'v3.16.0') CONFIRMED release v3.16.0 (published 2026-09-18)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"openai/openai-python\" exists and is actively maintained, with a recent push on September 21, 2026. Additionally, the claimed version v3.16.0 has been confirmed to have been released on September 18, 2026.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "webhook endpoint management",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Agents for Real Tasks.pptx / slide 45 (0.432) | Week 4 / Agents for Real Tasks.pptx / slide 44 (0.409) | Week 5 / Lab: Exercise Solution Complete Multi Agent Upgrade / cell 2 (0.268)"
+            },
+            {
+              "n": 2,
+              "query": "MCP connector_id",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 6 / Agent Evaluation / slide 16 (exact:mcp) | Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 33 (0.257) | Week 4 / Agents for Real Tasks.pptx / slide 53 (exact:mcp)"
+            }
+          ],
+          "reason": "The deprecation of MCP connector_id in version 3.16.0 makes the previous teaching on Model Context Protocol (MCP) outdated, as it no longer includes the connector_id reference.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "openai/openai-python: v3.12.0",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.12.0",
+          "note": "openai/openai-python: v3.12.0  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python",
+          "note": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.12.0",
+          "note": "verify_release('openai/openai-python', 'v3.12.0') CONFIRMED release v3.12.0 (published 2026-09-10)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "update_existing_material",
+      "action_plan": [
+        "Update the OpenAI Python SDK version in cell 6 to v3.12.0 to ensure compatibility with the latest features and improvements.",
+        "Revise the setup instructions in the lab notebook to reflect any changes in the initialization process for the new SDK version.",
+        "Check the model call syntax in cell 6 to confirm it aligns with the updated SDK documentation and make necessary adjustments.",
+        "Test the updated lab notebook to verify that all functionalities work correctly with the new SDK version."
+      ],
+      "match": {
+        "week": 2,
+        "topic": "Story Writing with Prompt Chaining OpenAI",
+        "source_file": "Story_Writing_with_Prompt_Chaining_OpenAI.ipynb",
+        "slide_number": 6,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.685,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6"
+      },
+      "total_score": 4.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai/openai-python"
+              },
+              "result_summary": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "openai/openai-python",
+                "version": "v3.12.0"
+              },
+              "result_summary": "verify_release('openai/openai-python', 'v3.12.0') CONFIRMED release v3.12.0 (published 2026-09-10)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai/openai-python"
+              },
+              "observation": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "openai/openai-python",
+                "version": "v3.12.0"
+              },
+              "observation": "verify_release('openai/openai-python', 'v3.12.0') CONFIRMED release v3.12.0 (published 2026-09-10)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"openai/openai-python\" exists and is actively maintained, with a recent push on September 21, 2026. Additionally, the claimed version v3.12.0 has been confirmed to exist and was published on September 10, 2026.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "openai-python",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17 (0.734) | Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6 (0.685) | Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 6 (0.71)"
+            },
+            {
+              "n": 2,
+              "query": "Add Live API",
+              "filters": {
+                "week": 3,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Rag to agent demo sol / cell 27 (0.396) | Week 3 / Lab: Rag to agent demo sol / cell 7 (0.216) | Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 15 (0.335)"
+            },
+            {
+              "n": 3,
+              "query": "aclose() to AsyncStream",
+              "filters": {
+                "week": 2,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 22 (0.202) | Week 2 / Lab: RAG Evaluation Metrics with Ragas sol / cell 50 (0.2) | Week 2 / Lab: RAG Evaluation Metrics with Ragas sol / cell 54 (0.2)"
+            }
+          ],
+          "reason": "The curriculum references the OpenAI Python SDK and the Responses API, which may need updating due to the changes introduced in version 3.12.0.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "openai/openai-python: v3.10.0",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.10.0",
+          "note": "openai/openai-python: v3.10.0  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python",
+          "note": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.10.0",
+          "note": "verify_release('openai/openai-python', 'v3.10.0') CONFIRMED release v3.10.0 (published 2026-09-09)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "update_existing_material",
+      "action_plan": [
+        "Update the code in cell 17 to reflect the new version of the OpenAI Python library by changing the import statement to the updated module path.",
+        "Revise the text in cell 17 to include a reference to the new version, emphasizing the importance of checking compatibility with the latest features and improvements in v3.10.0.",
+        "Add a note in cell 17 about the specific models available in the new version, encouraging users to explore the updated documentation for detailed information."
+      ],
+      "match": {
+        "week": 3,
+        "topic": "Demo LangChain Document Chat using OpenAI(solution)",
+        "source_file": "Demo_LangChain_Document_Chat_using_OpenAI(solution).ipynb",
+        "slide_number": 17,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.734,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17"
+      },
+      "total_score": 4.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai/openai-python"
+              },
+              "result_summary": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "openai/openai-python",
+                "version": "v3.10.0"
+              },
+              "result_summary": "verify_release('openai/openai-python', 'v3.10.0') CONFIRMED release v3.10.0 (published 2026-09-09)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai/openai-python"
+              },
+              "observation": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "openai/openai-python",
+                "version": "v3.10.0"
+              },
+              "observation": "verify_release('openai/openai-python', 'v3.10.0') CONFIRMED release v3.10.0 (published 2026-09-09)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"openai/openai-python\" exists and is actively maintained, with a recent push on September 21, 2026. Additionally, the claimed version \"v3.10.0\" has been confirmed to exist and was published on September 9, 2026.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "openai-python",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17 (0.734) | Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6 (0.685) | Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 6 (0.71)"
+            },
+            {
+              "n": 2,
+              "query": "GPT Image",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 5 / Lab: Demo Multi Agent System Walkthrough(Solution) / cell 8 (exact:gpt) | Week 3 / Finetuning Intro / slide 94 (exact:gpt) | Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 29 (exact:gpt)"
+            },
+            {
+              "n": 3,
+              "query": "service-account API key",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Rag to agent demo sol / cell 54 (0.307) | Week 3 / Lab: Demo Langchian Overview(Solution) / cell 37 (0.417) | Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 6 (0.355)"
+            }
+          ],
+          "reason": "The addition of GPT Image 2.5 models introduces new model options that are now available in the OpenAI Python SDK, which is directly referenced in the curriculum.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "langchain-ai/langchain: langchain-openai==1.6.3",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.3",
+          "note": "langchain-ai/langchain: langchain-openai==1.6.3  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.2",
+          "note": "langchain-ai/langchain: langchain-openai==1.6.2  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain",
+          "note": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.3",
+          "note": "verify_release('langchain-ai/langchain', 'langchain-openai==1.6.3') CONFIRMED release langchain-openai==1.6.3 (published 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "update_existing_material",
+      "action_plan": [
+        "update the import to the new module path in cell 4 of Week 5 / Lab: Demo Diagnosing Coordination Failures(Solution) to reflect the latest version of langchain.",
+        "ensure that all instances of langchain_openai are updated to the new module path throughout the lab notebook for consistency and functionality.",
+        "verify that the updated imports do not break any existing functionality in the lab notebook after the changes are made."
+      ],
+      "match": {
+        "week": 5,
+        "topic": "Demo Diagnosing Coordination Failures(Solution)",
+        "source_file": "Demo_Diagnosing_Coordination_Failures(Solution).ipynb",
+        "slide_number": 4,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.595,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 5 / Lab: Demo Diagnosing Coordination Failures(Solution) / cell 4"
+      },
+      "total_score": 4.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain-ai/langchain"
+              },
+              "result_summary": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "langchain-ai/langchain",
+                "version": "langchain-openai==1.6.3"
+              },
+              "result_summary": "verify_release('langchain-ai/langchain', 'langchain-openai==1.6.3') CONFIRMED release langchain-openai==1.6.3 (published 2026-09-21)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain-ai/langchain"
+              },
+              "observation": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "langchain-ai/langchain",
+                "version": "langchain-openai==1.6.3"
+              },
+              "observation": "verify_release('langchain-ai/langchain', 'langchain-openai==1.6.3') CONFIRMED release langchain-openai==1.6.3 (published 2026-09-21)"
+            },
+            {
+              "iteration": 3,
+              "thought": "I have confirmed that the repository \"langchain-ai/langchain\" exists and is well-established, with a significant number of stars and recent activity. Additionally, the specific version \"langchain-openai==1.6.3\" has been released as claimed. \n\nNo further tool calls are necessary.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "langchain-openai",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 6 / Lab: Demo Agent Execution Logging(Solution) / cell 3 (0.588) | Week 5 / Lab: Demo Diagnosing Coordination Failures(Solution) / cell 4 (0.595) | Week 3 / Lab: Demo LangChain Intro(Solution) / cell 28 (0.627)"
+            },
+            {
+              "n": 2,
+              "query": "Responses API",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 31 (0.535) | Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6 (0.474) | Week 2 / Lab: openai api quickstart / cell 3 (0.386)"
+            },
+            {
+              "n": 3,
+              "query": "GPT-6 request constraints",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Introduction to Multi Agent Systems.pptx / slide 16 (exact:gpt) | Week 4 / Designing Tool Systems   New Version / slide 15 (0.33) | Week 4 / Designing Tool Systems   New Version / slide 14 (0.257)"
+            }
+          ],
+          "reason": "The introduction of support for GPT-6 request constraints in the new version of langchain-openai could affect the handling of large language model interactions, specifically in how the curriculum currently teaches the usage of the ChatOpenAI class, which may not reflect these new constraints.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "openai/openai-python: v3.13.0",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.13.0",
+          "note": "openai/openai-python: v3.13.0  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python",
+          "note": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.13.0",
+          "note": "verify_release('openai/openai-python', 'v3.13.0') CONFIRMED release v3.13.0 (published 2026-09-10)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "update_existing_material",
+      "action_plan": [
+        "Update the content on slide 44 of the \"Agents for Real Tasks.pptx\" to reflect the new version of the OpenAI Python library, ensuring that the API integration patterns are aligned with the latest features and best practices.",
+        "Revise the examples provided in the lecture to include any new methods or functionalities introduced in version 3.13.0, emphasizing how these changes improve the interaction with REST APIs.",
+        "Ensure that any references to the previous version of the library are removed or updated to prevent confusion among learners.",
+        "Add a note on the slide about the importance of checking the official documentation for the latest updates and changes in the API usage."
+      ],
+      "match": {
+        "week": 4,
+        "topic": "Agents for Real Tasks.pptx",
+        "source_file": "Agents for Real Tasks.pptx.pdf",
+        "slide_number": 44,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.639,
+        "exact_match": null,
+        "content_type": "slides",
+        "citation": "Week 4 / Agents for Real Tasks.pptx / slide 44"
+      },
+      "total_score": 4.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai/openai-python"
+              },
+              "result_summary": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "openai/openai-python",
+                "version": "v3.13.0"
+              },
+              "result_summary": "verify_release('openai/openai-python', 'v3.13.0') CONFIRMED release v3.13.0 (published 2026-09-10)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The signal claims that the repository \"openai/openai-python\" has a release for version \"v3.13.0\". I will first check if the repository exists and is established by calling the `github_lookup` tool.\n\nCalling `github_lookup` for \"openai/openai-python\".",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai/openai-python"
+              },
+              "observation": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "iteration": 2,
+              "thought": "The repository \"openai/openai-python\" exists and has 31,672 stars, with the last push on September 21, 2026. This indicates that it is an established project. \n\nNext, I will verify if the specific version \"v3.13.0\" has been released by calling the `verify_release` tool. \n\nCalling `verify_release` for \"openai/openai-python\" with version \"v3.13.0\".",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "openai/openai-python",
+                "version": "v3.13.0"
+              },
+              "observation": "verify_release('openai/openai-python', 'v3.13.0') CONFIRMED release v3.13.0 (published 2026-09-10)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The specific version \"v3.13.0\" of the repository \"openai/openai-python\" has been released, with the release published on September 10, 2026. \n\nI have confirmed both the existence of the repository and the release of the claimed version. No further tool calls are needed.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "Agents API",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Agents for Real Tasks.pptx / slide 44 (0.639) | Week 4 / Agents for Real Tasks.pptx / slide 45 (0.634) | Week 4 / Agents for Real Tasks.pptx / slide 14 (0.598)"
+            },
+            {
+              "n": 2,
+              "query": "openai-python",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17 (0.734) | Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6 (0.685) | Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 6 (0.71)"
+            }
+          ],
+          "reason": "The introduction of the Agents API changes how agents interact with external systems and APIs, making existing patterns referenced in the curriculum potentially outdated.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "langchain-ai/langsmith-sdk: v0.14.0",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 2 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.14.0",
+          "note": "langchain-ai/langsmith-sdk: v0.14.0  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.13.0",
+          "note": "langchain-ai/langsmith-sdk: v0.13.0  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.12.6",
+          "note": "langchain-ai/langsmith-sdk: v0.12.6  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.12.3",
+          "note": "langchain-ai/langsmith-sdk: v0.12.3  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.4",
+          "note": "langchain-ai/langgraph: langgraph-sdk==0.4.4",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals",
+          "note": "Jev is now available in LangSmith Evals",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "https://www.langchain.com/blog/how-included-health-built-federated-agents-for-healthcare-navigation-with-deep-agents-and-langgraph",
+          "note": "How Included Health Built Federated Healthcare Agents with LangGraph and Deep Agents",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "https://www.langchain.com/blog/august-2026-langchain-newsletter",
+          "note": "August 2026: LangChain Newsletter — Managed Deep Agents, LLM Gateway, and More",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langsmith-sdk",
+          "note": "github_lookup('langchain-ai/langsmith-sdk') matched langchain-ai/langsmith-sdk (1060 stars, pushed 2026-09-19)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.14.0",
+          "note": "verify_release('langchain-ai/langsmith-sdk', 'v0.14.0') CONFIRMED release v0.14.0 (published 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "add_optional_content",
+      "action_plan": [
+        "Update the lab notebook cell 14 to include optional content that explains the purpose and use of deterministic trace fixtures in the context of the evaluation solution. This will enhance understanding for students who may need additional context.",
+        "Ensure that the text clearly states that these traces are for practice and not empirical model runs, reinforcing their role in the learning process.",
+        "Add a note about when to use this section, specifically mentioning that it is not utilized in `RUN_MODE`, to clarify its application.",
+        "Review the overall flow of the lab to ensure that the new content integrates smoothly with existing materials and does not disrupt the learning objectives."
+      ],
+      "match": {
+        "week": 6,
+        "topic": "Demo End to End Agent Evaluation Solution",
+        "source_file": "Demo_End_to_End_Agent_Evaluation_Solution.ipynb",
+        "slide_number": 14,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.547,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 6 / Lab: Demo End to End Agent Evaluation Solution / cell 14"
+      },
+      "total_score": 3.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain-ai/langsmith-sdk"
+              },
+              "result_summary": "github_lookup('langchain-ai/langsmith-sdk') matched langchain-ai/langsmith-sdk (1060 stars, pushed 2026-09-19)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "langchain-ai/langsmith-sdk",
+                "version": "v0.14.0"
+              },
+              "result_summary": "verify_release('langchain-ai/langsmith-sdk', 'v0.14.0') CONFIRMED release v0.14.0 (published 2026-09-21)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain-ai/langsmith-sdk"
+              },
+              "observation": "github_lookup('langchain-ai/langsmith-sdk') matched langchain-ai/langsmith-sdk (1060 stars, pushed 2026-09-19)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "langchain-ai/langsmith-sdk",
+                "version": "v0.14.0"
+              },
+              "observation": "verify_release('langchain-ai/langsmith-sdk', 'v0.14.0') CONFIRMED release v0.14.0 (published 2026-09-21)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"langchain-ai/langsmith-sdk\" exists and is established, with 1060 stars and a recent push on September 19, 2026. Additionally, the claimed version v0.14.0 has been confirmed to exist, having been released on September 21, 2026. \n\nNo further tool calls are necessary.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "langsmith-sdk v0.14.0",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Lab: Demo Evaluating Agent Behavior (sol) / cell 4 (0.334) | Week 4 / Lab: Demo From Single Agent to Multi Agent Workflow sol / cell 3 (0.334) | Week 4 / Lab: Demo Reference Agent System Walkthrough sol / cell 5 (0.334)"
+            },
+            {
+              "n": 2,
+              "query": "evaluate()",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 6 / Agent Evaluation / slide 5 (0.396) | Week 6 / Agent Evaluation / slide 39 (0.359) | Week 2 / Lab: BERT for Text Classification Lab(solution) / cell 10 (0.389)"
+            },
+            {
+              "n": 3,
+              "query": "disable_evaluator_tracing",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 6 / Agent Observability and Monitoring / slide 20 (0.387) | Week 6 / Lab: Demo End to End Agent Evaluation Solution / cell 14 (0.547) | Week 3 / Lab: Building a Minimal Tool Agent sol / cell 4 (0.389)"
+            }
+          ],
+          "reason": "The introduction of the 'disable_evaluator_tracing' toggle alters how tracing is integrated into evaluations, which makes existing teaching content that does not account for this feature potentially outdated.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "langchain-ai/langchain: langchain==1.4.2",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.2",
+          "note": "langchain-ai/langchain: langchain==1.4.2  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain",
+          "note": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.2",
+          "note": "verify_release('langchain-ai/langchain', 'langchain==1.4.2') CONFIRMED release langchain==1.4.2 (published 2026-09-18)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "add_optional_content",
+      "action_plan": [
+        "Update the import for ChatOpenAI to the new module path in cell 49 to ensure compatibility with the latest version of LangChain.",
+        "Add optional content to the lab notebook in cell 49 by including a brief explanation of how to use the PyPDFLoader for document loading.",
+        "Incorporate a note in the lab notebook about the importance of using the latest version of LangChain to avoid potential issues with deprecated functions.",
+        "Ensure that all references to the old version of LangChain are updated throughout the lab notebook to maintain consistency and clarity."
+      ],
+      "match": {
+        "week": 3,
+        "topic": "Demo LangChain Document Chat using OpenAI(solution)",
+        "source_file": "Demo_LangChain_Document_Chat_using_OpenAI(solution).ipynb",
+        "slide_number": 49,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.531,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 49"
+      },
+      "total_score": 3.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain-ai/langchain"
+              },
+              "result_summary": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "langchain-ai/langchain",
+                "version": "langchain==1.4.2"
+              },
+              "result_summary": "verify_release('langchain-ai/langchain', 'langchain==1.4.2') CONFIRMED release langchain==1.4.2 (published 2026-09-18)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain-ai/langchain"
+              },
+              "observation": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "langchain-ai/langchain",
+                "version": "langchain==1.4.2"
+              },
+              "observation": "verify_release('langchain-ai/langchain', 'langchain==1.4.2') CONFIRMED release langchain==1.4.2 (published 2026-09-18)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"langchain-ai/langchain\" exists and is well-established, with a significant number of stars and recent activity. Additionally, the specific version \"langchain==1.4.2\" has been confirmed to have been released.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "langchain",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Intro(Solution) / cell 1 (0.723) | Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 49 (0.531) | Week 3 / Lab: Demo Langchian Overview(Solution) / cell 1 (0.603)"
+            }
+          ],
+          "reason": "The change in langchain==1.4.2 includes a fix to preserve model-generated tool calls, which may affect how the content demonstrates tool usage in the curriculum.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "openai/openai-python: v3.15.0",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.15.0",
+          "note": "openai/openai-python: v3.15.0  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python",
+          "note": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.15.0",
+          "note": "verify_release('openai/openai-python', 'v3.15.0') CONFIRMED release v3.15.0 (published 2026-09-18)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "add_optional_content",
+      "action_plan": [
+        "Update slide 15 in Week 5 / Agent Memory Systems to include a section on how memory enhances user experience by allowing agents to provide personalized interactions based on past conversations.",
+        "Add a bullet point under \"Learn from mistakes\" to explain how memory enables agents to track user feedback and improve their responses over time.",
+        "Incorporate a real-world example of an agent that successfully utilizes memory to illustrate its importance in practical applications.",
+        "Ensure that the updated content aligns with the overall learning objectives of the module and enhances student understanding of the necessity of memory in agent systems."
+      ],
+      "match": {
+        "week": 5,
+        "topic": "Agent Memory Systems",
+        "source_file": "Agent Memory Systems.pdf",
+        "slide_number": 15,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.492,
+        "exact_match": null,
+        "content_type": "slides",
+        "citation": "Week 5 / Agent Memory Systems / slide 15"
+      },
+      "total_score": 3.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai/openai-python"
+              },
+              "result_summary": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "openai/openai-python",
+                "version": "v3.15.0"
+              },
+              "result_summary": "verify_release('openai/openai-python', 'v3.15.0') CONFIRMED release v3.15.0 (published 2026-09-18)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai/openai-python"
+              },
+              "observation": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "openai/openai-python",
+                "version": "v3.15.0"
+              },
+              "observation": "verify_release('openai/openai-python', 'v3.15.0') CONFIRMED release v3.15.0 (published 2026-09-18)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"openai/openai-python\" exists and is actively maintained, with a recent push on September 21, 2026. Additionally, the claimed version v3.15.0 has been confirmed to exist and was published on September 18, 2026.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "openai-python v3.15.0",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17 (0.641) | Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6 (0.598) | Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 15 (0.69)"
+            },
+            {
+              "n": 2,
+              "query": "agent session model settings",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 5 / Agent Memory Systems / slide 5 (0.479) | Week 4 / Agents for Real Tasks.pptx / slide 66 (0.557) | Week 5 / Agent Memory Systems / slide 15 (0.492)"
+            },
+            {
+              "n": 3,
+              "query": "audio-mini model choices",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 7 (0.276) | Week 3 / Lab: Demo BERT Finetune Practical Guide / cell 15 (0.341) | Week 3 / Lab: Demo BERT Finetune Practical Guide / cell 10 (0.325)"
+            }
+          ],
+          "reason": "The introduction of agent session model settings in v3.15.0 could change how memory is implemented or expected in agents, making the content on how agents use memory in the curriculum potentially outdated.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "openai/openai-python: v3.14.0",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.14.0",
+          "note": "openai/openai-python: v3.14.0  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python",
+          "note": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.14.0",
+          "note": "verify_release('openai/openai-python', 'v3.14.0') CONFIRMED release v3.14.0 (published 2026-09-14)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "add_optional_content",
+      "action_plan": [
+        "Update the lab notebook cell 46 to include a section on optimizing the request payload for large PDFs when using OpenAI, explaining how to split the document into smaller chunks.",
+        "Add a practical example demonstrating the chunking process in the same cell, ensuring it aligns with the existing content on LangChain.",
+        "Include a brief explanation of the importance of managing prompt length to avoid errors, reinforcing the learning objectives of the lab.",
+        "Ensure that all new content is clearly marked as optional to maintain the integrity of the original curriculum structure."
+      ],
+      "match": {
+        "week": 3,
+        "topic": "Demo LangChain Document Chat using OpenAI(solution)",
+        "source_file": "Demo_LangChain_Document_Chat_using_OpenAI(solution).ipynb",
+        "slide_number": 46,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.507,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 46"
+      },
+      "total_score": 3.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai/openai-python"
+              },
+              "result_summary": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "openai/openai-python",
+                "version": "v3.14.0"
+              },
+              "result_summary": "verify_release('openai/openai-python', 'v3.14.0') CONFIRMED release v3.14.0 (published 2026-09-14)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai/openai-python"
+              },
+              "observation": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "openai/openai-python",
+                "version": "v3.14.0"
+              },
+              "observation": "verify_release('openai/openai-python', 'v3.14.0') CONFIRMED release v3.14.0 (published 2026-09-14)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"openai/openai-python\" exists and is actively maintained, with a recent push on September 21, 2026. Additionally, the claimed version \"v3.14.0\" has been confirmed to exist and was published on September 14, 2026.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "openai-python",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17 (0.734) | Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6 (0.685) | Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 6 (0.71)"
+            },
+            {
+              "n": 2,
+              "query": "openai-python streaming error handling",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 46 (0.409) | Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17 (0.447) | Week 4 / Lab: Exercise Implement Tool Error Handling sol / cell 9 (0.409)"
+            },
+            {
+              "n": 3,
+              "query": "openai-python errors raised while reading streams",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 46 (0.507) | Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17 (0.449) | Week 6 / Lab: Demo End to End Agent Evaluation Solution / cell 13 (0.564)"
+            }
+          ],
+          "reason": "The change in how streaming errors are normalized can make the existing guidance on handling errors while reading streams misleading or outdated.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "tokenizers v1: encode, decode and scaling, measured",
+      "confidence": 0.6,
+      "verification_note": "confidence 0.60: 0 of 1 independent source(s) checked; repository exists; claim NOT independently verified; first-party source, nothing independently checkable; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "huggingface_blog",
+          "tier": "primary",
+          "url": "https://huggingface.co/blog/tokenizers-v1",
+          "note": "tokenizers v1: encode, decode and scaling, measured",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/huggingface/tokenizers",
+          "note": "github_lookup('huggingface/tokenizers') matched huggingface/tokenizers (11056 stars, pushed 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "",
+          "note": "verify_release('huggingface/tokenizers', 'v1.0.0') could NOT confirm that release -- claim not verified",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: tokenizers v1: encode, decode and scaling, measured.",
+        "Re-evaluate when further primary sources appear.",
+        "Not yet established enough to justify a curriculum change."
+      ],
+      "match": {
+        "week": 2,
+        "topic": "HuggingFace Intro (demo solution)",
+        "source_file": "HuggingFace_Intro_(demo_solution).ipynb",
+        "slide_number": 22,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.622,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 2 / Lab: HuggingFace Intro (demo solution) / cell 22"
+      },
+      "total_score": 3.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "huggingface/tokenizers"
+              },
+              "result_summary": "github_lookup('huggingface/tokenizers') matched huggingface/tokenizers (11056 stars, pushed 2026-09-21)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "huggingface/tokenizers",
+                "version": "v1.0.0"
+              },
+              "result_summary": "verify_release('huggingface/tokenizers', 'v1.0.0') could NOT confirm that release -- claim not verified"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "huggingface/tokenizers"
+              },
+              "observation": "github_lookup('huggingface/tokenizers') matched huggingface/tokenizers (11056 stars, pushed 2026-09-21)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "huggingface/tokenizers",
+                "version": "v1.0.0"
+              },
+              "observation": "verify_release('huggingface/tokenizers', 'v1.0.0') could NOT confirm that release -- claim not verified"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"huggingface/tokenizers\" exists and is actively maintained, with a significant number of stars (11,056) and a recent push date. However, the specific version \"v1.0.0\" that was claimed in the signal does not exist; the latest release is a release candidate \"v1.0.0-rc.2\" and there are no stable releases tagged as \"v1.0.0\". \n\nNo further tool calls are necessary.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "tokenizers v1 encode",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / Lab: BERT Word Similarity lab (solution) / cell 10 (0.633) | Week 2 / Lab: HuggingFace Intro (demo solution) / cell 21 (0.571) | Week 2 / Lab: BERT for Sentiment Analysis(solution) / cell 46 (0.512)"
+            },
+            {
+              "n": 2,
+              "query": "tokenizers v1 decode",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / Lab: HuggingFace Intro (demo solution) / cell 21 (0.584) | Week 2 / Lab: HuggingFace Intro (demo solution) / cell 22 (0.622) | Week 2 / Lab: LLM 3 BERT Example Output (demo) / cell 17 (0.613)"
+            },
+            {
+              "n": 3,
+              "query": "tokenizers v1 scaling",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / Lab: HuggingFace Intro (demo solution) / cell 21 (0.488) | Week 2 / Lab: LLM 3 BERT Example Output (demo) / cell 8 (0.445) | Week 2 / Lab: BERT Use Cases lab (solution) / cell 30 (0.547)"
+            }
+          ],
+          "reason": "The curriculum teaches the use of the tokenizer's encode and decode functionalities, which may be impacted by the release of tokenizers v1 that might introduce changes to those APIs.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "langchain-ai/langchain: langchain==1.4.1",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.1",
+          "note": "langchain-ai/langchain: langchain==1.4.1  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain",
+          "note": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.1",
+          "note": "verify_release('langchain-ai/langchain', 'langchain==1.4.1') CONFIRMED release langchain==1.4.1 (published 2026-09-16)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "add_optional_content",
+      "action_plan": [
+        "Update slide 55 in Week 4 to include a section on the importance of distinguishing between orchestration-level and prompt-level stopping mechanisms.",
+        "Add a note emphasizing the need for clear guidelines on when to use a prompt stop versus a hard stop, ensuring that users understand the implications of each choice.",
+        "Incorporate a practical example that illustrates the application of these stopping mechanisms in real-world scenarios, enhancing comprehension and usability.",
+        "Ensure that the updated content aligns with the overall learning objectives of the module, reinforcing the key concepts of debugging and controlling agents.",
+        "Also triggered by 1 related trend(s) targeting the same material: langchain-ai/langgraph: langgraph==1.2.12."
+      ],
+      "match": {
+        "week": 4,
+        "topic": "Debugging and Controlling Agents   New Version",
+        "source_file": "Debugging and Controlling Agents - New Version.pdf",
+        "slide_number": 55,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.338,
+        "exact_match": null,
+        "content_type": "slides",
+        "citation": "Week 4 / Debugging and Controlling Agents   New Version / slide 55"
+      },
+      "total_score": 3.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain-ai/langchain"
+              },
+              "result_summary": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "langchain-ai/langchain",
+                "version": "langchain==1.4.1"
+              },
+              "result_summary": "verify_release('langchain-ai/langchain', 'langchain==1.4.1') CONFIRMED release langchain==1.4.1 (published 2026-09-16)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain-ai/langchain"
+              },
+              "observation": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "langchain-ai/langchain",
+                "version": "langchain==1.4.1"
+              },
+              "observation": "verify_release('langchain-ai/langchain', 'langchain==1.4.1') CONFIRMED release langchain==1.4.1 (published 2026-09-16)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"langchain-ai/langchain\" exists and is well-established, with a significant number of stars and recent activity. Additionally, the specific version \"langchain==1.4.1\" has been confirmed to have been released.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "langchain==1.4.0",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 48 (0.528) | Week 3 / Lab: Demo LangChain Intro(Solution) / cell 1 (0.586) | Week 3 / Lab: Demo LangChain Splitter(solution) / cell 2 (0.58)"
+            },
+            {
+              "n": 2,
+              "query": "InterruptOnConfig",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Debugging and Controlling Agents   New Version / slide 55 (0.338) | Week 4 / Debugging and Controlling Agents   New Version / slide 50 (0.332) | Week 4 / Lab: Demo Tool Dispatcher Pattern sol / cell 10 (0.281)"
+            }
+          ],
+          "reason": "The change in behavior regarding 'InterruptOnConfig' makes the content that instructs on stopping and controlling agents potentially outdated or misleading.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "langchain-ai/langchain: langchain-anthropic==1.7.2",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.2",
+          "note": "langchain-ai/langchain: langchain-anthropic==1.7.2  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain",
+          "note": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.2",
+          "note": "verify_release('langchain-ai/langchain', 'langchain-anthropic==1.7.2') CONFIRMED release langchain-anthropic==1.7.2 (published 2026-09-10)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "add_optional_content",
+      "action_plan": [
+        "update the lab notebook cell to include a new example of agent failure with invalid input for the scrape_webpage tool, enhancing the understanding of error handling.",
+        "revise the text in Week 4 / Lab: Agent Failure Examples to clarify the implications of passing invalid input and how it affects the agent's performance.",
+        "add a discussion prompt at the end of the lab notebook cell to encourage students to reflect on potential solutions for handling invalid inputs in real-world applications."
+      ],
+      "match": {
+        "week": 4,
+        "topic": "Agent Failure Examples sol",
+        "source_file": "Agent_Failure_Examples_sol.ipynb",
+        "slide_number": 15,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.426,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 4 / Lab: Agent Failure Examples sol / cell 15"
+      },
+      "total_score": 3.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain-ai/langchain"
+              },
+              "result_summary": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "langchain-ai/langchain",
+                "version": "langchain-anthropic==1.7.2"
+              },
+              "result_summary": "verify_release('langchain-ai/langchain', 'langchain-anthropic==1.7.2') CONFIRMED release langchain-anthropic==1.7.2 (published 2026-09-10)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain-ai/langchain"
+              },
+              "observation": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "langchain-ai/langchain",
+                "version": "langchain-anthropic==1.7.2"
+              },
+              "observation": "verify_release('langchain-ai/langchain', 'langchain-anthropic==1.7.2') CONFIRMED release langchain-anthropic==1.7.2 (published 2026-09-10)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"langchain-ai/langchain\" exists and is well-established, with a significant number of stars and recent activity. Additionally, the specific version \"langchain-anthropic==1.7.2\" has been confirmed to have been released.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "langchain-anthropic",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Intro(Solution) / cell 1 (0.603) | Week 5 / Lab: Demo Common Agent Failure Cases(Solution) / cell 8 (0.364) | Week 3 / Lab: Demo Langchian Overview(Solution) / cell 1 (0.52)"
+            },
+            {
+              "n": 2,
+              "query": "invalid tool use blocks",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Lab: Agent Failure Examples sol / cell 15 (0.426) | Week 4 / Debugging and Controlling Agents   New Version / slide 36 (0.456) | Week 4 / Designing Tool Systems   New Version / slide 17 (0.492)"
+            }
+          ],
+          "reason": "The curriculum teaches about agent behavior related to passing invalid input to tools, which is now affected by the fix in langchain-anthropic==1.7.2 that preserves invalid tool use blocks.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "openai/openai-python: v3.11.0",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.11.0",
+          "note": "openai/openai-python: v3.11.0  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python",
+          "note": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.11.0",
+          "note": "verify_release('openai/openai-python', 'v3.11.0') CONFIRMED release v3.11.0 (published 2026-09-09)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "add_optional_content",
+      "action_plan": [
+        "Update slide 49 in Week 4 to include a section on the importance of high-risk controls and their enforcement outside the model, emphasizing the limitations of prompt instructions.",
+        "Add a note in the speaker's notes for slide 49 to highlight the need for clear examples of bounded autonomy in practical applications.",
+        "Include a discussion point in the curriculum for students to analyze scenarios where system enforcement is critical, ensuring they understand the implications of high-risk controls.",
+        "Revise the content to clarify the distinction between prompt instructions and system controls, ensuring students grasp the concept of permission checks in the context of bounded autonomy."
+      ],
+      "match": {
+        "week": 4,
+        "topic": "Debugging and Controlling Agents   New Version",
+        "source_file": "Debugging and Controlling Agents - New Version.pdf",
+        "slide_number": 49,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.201,
+        "exact_match": null,
+        "content_type": "slides",
+        "citation": "Week 4 / Debugging and Controlling Agents   New Version / slide 49"
+      },
+      "total_score": 3.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai/openai-python"
+              },
+              "result_summary": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "openai/openai-python",
+                "version": "v3.11.0"
+              },
+              "result_summary": "verify_release('openai/openai-python', 'v3.11.0') CONFIRMED release v3.11.0 (published 2026-09-09)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The signal claims that the repository \"openai/openai-python\" has a release for version \"v3.11.0\". I will first check if the repository exists and is established by calling the `github_lookup` tool.\n\nCalling `github_lookup` for \"openai/openai-python\".",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai/openai-python"
+              },
+              "observation": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "iteration": 2,
+              "thought": "The repository \"openai/openai-python\" exists and has 31,672 stars, with the last push on September 21, 2026. This indicates that it is an established project. \n\nNext, I will verify if the specific version \"v3.11.0\" has been released by calling the `verify_release` tool. \n\nCalling `verify_release` for \"openai/openai-python\" with version \"v3.11.0\".",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "openai/openai-python",
+                "version": "v3.11.0"
+              },
+              "observation": "verify_release('openai/openai-python', 'v3.11.0') CONFIRMED release v3.11.0 (published 2026-09-09)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The specific version \"v3.11.0\" of the repository \"openai/openai-python\" has been released, with the release published on September 9, 2026. \n\nI have confirmed both the existence of the repository and the release of the claimed version. No further tool calls are needed.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "expiration controls for service account keys",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 5 / Lab: Demo Conversation Memory in AI Agents sol / cell 30 (0.427) | Week 5 / Lab: Demo Conversation Memory in AI Agents sol / cell 29 (0.209) | Week 4 / Debugging and Controlling Agents   New Version / slide 49 (0.201)"
+            },
+            {
+              "n": 2,
+              "query": "service account keys",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Rag to agent demo sol / cell 27 (0.249) | Week 3 / Lab: Rag to agent demo sol / cell 54 (0.268) | Week 4 / Agents for Real Tasks.pptx / slide 64 (0.27)"
+            },
+            {
+              "n": 3,
+              "query": "openai-python",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17 (0.734) | Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6 (0.685) | Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 6 (0.71)"
+            }
+          ],
+          "reason": "The introduction of expiration controls for service account keys may alter how permissions and validity are managed, which is essential for enforcing security measures in systems that utilize service accounts, making previous guidance potentially outdated.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "langchain-ai/langsmith-sdk: v0.12.5",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.12.5",
+          "note": "langchain-ai/langsmith-sdk: v0.12.5  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.12.2",
+          "note": "langchain-ai/langsmith-sdk: v0.12.2  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.12.1",
+          "note": "langchain-ai/langsmith-sdk: v0.12.1  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.12.0",
+          "note": "langchain-ai/langsmith-sdk: v0.12.0  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.11.2",
+          "note": "langchain-ai/langsmith-sdk: v0.11.2  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langsmith-sdk",
+          "note": "github_lookup('langchain-ai/langsmith-sdk') matched langchain-ai/langsmith-sdk (1060 stars, pushed 2026-09-19)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.12.5",
+          "note": "verify_release('langchain-ai/langsmith-sdk', 'v0.12.5') CONFIRMED release v0.12.5 (published 2026-09-15)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: langchain-ai/langsmith-sdk: v0.12.5.",
+        "This is a routine release. The curriculum search found nothing matching these specific changes, which means the release notes do not affect material we teach -- not that the library is uncovered.",
+        "Re-check if a later release announces a breaking change."
+      ],
+      "match": null,
+      "total_score": 2.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain-ai/langsmith-sdk"
+              },
+              "result_summary": "github_lookup('langchain-ai/langsmith-sdk') matched langchain-ai/langsmith-sdk (1060 stars, pushed 2026-09-19)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "langchain-ai/langsmith-sdk",
+                "version": "v0.12.5"
+              },
+              "result_summary": "verify_release('langchain-ai/langsmith-sdk', 'v0.12.5') CONFIRMED release v0.12.5 (published 2026-09-15)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain-ai/langsmith-sdk"
+              },
+              "observation": "github_lookup('langchain-ai/langsmith-sdk') matched langchain-ai/langsmith-sdk (1060 stars, pushed 2026-09-19)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "langchain-ai/langsmith-sdk",
+                "version": "v0.12.5"
+              },
+              "observation": "verify_release('langchain-ai/langsmith-sdk', 'v0.12.5') CONFIRMED release v0.12.5 (published 2026-09-15)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"langchain-ai/langsmith-sdk\" exists and is established, with 1060 stars and a recent push date. Additionally, the claimed version v0.12.5 has been confirmed to exist and was published on September 15, 2026.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "langsmith-sdk",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 6 / Agent Observability and Monitoring / slide 32 (None) | Week 3 / Lab: Demo LangChain Splitter(solution) / cell 2 (0.452) | Week 5 / Agentic Frameworks and Orchestration / slide 35 (None)"
+            },
+            {
+              "n": 2,
+              "query": "langsmith",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / RAG Evaluation / slide 25 (0.207) | Week 6 / Agent Observability and Monitoring / slide 32 (None) | Week 3 / Lab: Lab LangChain wikipedia(studentVersion) / cell 31 (0.273)"
+            },
+            {
+              "n": 3,
+              "query": "LangSmith",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / RAG Evaluation / slide 25 (exact:langsmith) | Week 6 / Agent Observability and Monitoring / slide 32 (exact:langsmith) | Week 3 / Lab: Lab LangChain wikipedia(studentVersion) / cell 31 (0.273)"
+            }
+          ],
+          "reason": "I searched for 'langsmith-sdk' and related terms, but the curriculum content does not mention specific functionalities or behaviors that would be impacted by the changes introduced in version 0.12.5.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "openai/openai-python: v3.16.2",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.16.2",
+          "note": "openai/openai-python: v3.16.2  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python",
+          "note": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.16.2",
+          "note": "verify_release('openai/openai-python', 'v3.16.2') CONFIRMED release v3.16.2 (published 2026-09-18)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: openai/openai-python: v3.16.2.",
+        "This is a routine release. The curriculum search found nothing matching these specific changes, which means the release notes do not affect material we teach -- not that the library is uncovered.",
+        "Re-check if a later release announces a breaking change."
+      ],
+      "match": null,
+      "total_score": 2.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai/openai-python"
+              },
+              "result_summary": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "openai/openai-python",
+                "version": "v3.16.2"
+              },
+              "result_summary": "verify_release('openai/openai-python', 'v3.16.2') CONFIRMED release v3.16.2 (published 2026-09-18)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai/openai-python"
+              },
+              "observation": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "openai/openai-python",
+                "version": "v3.16.2"
+              },
+              "observation": "verify_release('openai/openai-python', 'v3.16.2') CONFIRMED release v3.16.2 (published 2026-09-18)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"openai/openai-python\" exists and is actively maintained, with a recent push on September 21, 2026. Additionally, the claimed version \"v3.16.2\" has been confirmed to exist and was published on September 18, 2026.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "parse_response",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Intro(Solution) / cell 23 (0.453) | Week 2 / Lab: optimizing llm as a judge prompts explainer / cell 13 (0.453) | Week 4 / Lab: Agent Failure Examples sol / cell 10 (0.429)"
+            },
+            {
+              "n": 2,
+              "query": "TextFormatT",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Streamlit Demo / cell 20 (0.413) | Week 2 / Lab: LLM 3 BERT Example Output (demo) / cell 9 (0.379) | Week 3 / Lab: Streamlit Demo / cell 28 (0.368)"
+            }
+          ],
+          "reason": "I searched for 'parse_response' and 'TextFormatT' related content but found nothing that indicates these specific changes render the curriculum content incorrect or outdated.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "openai/openai-python: v3.16.1",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.16.1",
+          "note": "openai/openai-python: v3.16.1  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python",
+          "note": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.16.1",
+          "note": "verify_release('openai/openai-python', 'v3.16.1') CONFIRMED release v3.16.1 (published 2026-09-18)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: openai/openai-python: v3.16.1.",
+        "This is a routine release. The curriculum search found nothing matching these specific changes, which means the release notes do not affect material we teach -- not that the library is uncovered.",
+        "Re-check if a later release announces a breaking change."
+      ],
+      "match": null,
+      "total_score": 2.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai/openai-python"
+              },
+              "result_summary": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "openai/openai-python",
+                "version": "v3.16.1"
+              },
+              "result_summary": "verify_release('openai/openai-python', 'v3.16.1') CONFIRMED release v3.16.1 (published 2026-09-18)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The signal claims that the repository \"openai/openai-python\" has a specific version \"v3.16.1\". I will first check if the repository exists and is established by calling the `github_lookup` tool. \n\nLet's proceed with that. \n\nCalling `github_lookup` for \"openai/openai-python\".",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai/openai-python"
+              },
+              "observation": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "iteration": 2,
+              "thought": "The repository \"openai/openai-python\" exists and has 31,672 stars, with the last push on September 21, 2026. This indicates that it is an established project.\n\nNext, since the signal claims a specific version \"v3.16.1\", I will now check if this version was actually released by calling the `verify_release` tool.\n\nCalling `verify_release` for \"openai/openai-python\" with version \"v3.16.1\".",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "openai/openai-python",
+                "version": "v3.16.1"
+              },
+              "observation": "verify_release('openai/openai-python', 'v3.16.1') CONFIRMED release v3.16.1 (published 2026-09-18)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The version \"v3.16.1\" of the repository \"openai/openai-python\" was indeed released on September 18, 2026. \n\nI have confirmed both the existence of the repository and the specific version release. No further tool calls are necessary.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "openai",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / AI Ethics / slide 69 (0.541) | Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 6 (0.518) | Week 6 / Lab: Demo End to End Agent Evaluation Solution / cell 3 (0.551)"
+            },
+            {
+              "n": 2,
+              "query": "loading unrelated API resources on first use",
+              "filters": {
+                "week": 2,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 22 (0.25) | Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6 (0.207) | Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 6 (0.191)"
+            },
+            {
+              "n": 3,
+              "query": "openai-python",
+              "filters": {
+                "week": 2,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6 (0.685) | Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 6 (0.71) | Week 2 / AI Ethics / slide 57 (0.366)"
+            }
+          ],
+          "reason": "I searched for changes related to 'loading unrelated API resources on first use' in the OpenAI Python SDK, but found no instructional material in the curriculum that would be impacted by this change.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "openai/openai-python: v3.14.1",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.14.1",
+          "note": "openai/openai-python: v3.14.1  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python",
+          "note": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.14.1",
+          "note": "verify_release('openai/openai-python', 'v3.14.1') CONFIRMED release v3.14.1 (published 2026-09-15)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: openai/openai-python: v3.14.1.",
+        "This is a routine release. The curriculum search found nothing matching these specific changes, which means the release notes do not affect material we teach -- not that the library is uncovered.",
+        "Re-check if a later release announces a breaking change."
+      ],
+      "match": null,
+      "total_score": 2.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai/openai-python"
+              },
+              "result_summary": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "openai/openai-python",
+                "version": "v3.14.1"
+              },
+              "result_summary": "verify_release('openai/openai-python', 'v3.14.1') CONFIRMED release v3.14.1 (published 2026-09-15)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai/openai-python"
+              },
+              "observation": "github_lookup('openai/openai-python') matched openai/openai-python (31672 stars, pushed 2026-09-21)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "openai/openai-python",
+                "version": "v3.14.1"
+              },
+              "observation": "verify_release('openai/openai-python', 'v3.14.1') CONFIRMED release v3.14.1 (published 2026-09-15)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"openai/openai-python\" exists and is actively maintained, with a recent push on September 21, 2026. Additionally, the claimed version v3.14.1 has been confirmed to exist and was published on September 15, 2026.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "openai/openai-python",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17 (0.73) | Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6 (0.692) | Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 6 (0.682)"
+            },
+            {
+              "n": 2,
+              "query": "v3.14.1 retry limits",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Debugging and Controlling Agents   New Version / slide 52 (0.521) | Week 5 / Planning and Task Decomposition / slide 31 (0.551) | Week 4 / Debugging and Controlling Agents   New Version / slide 41 (0.38)"
+            },
+            {
+              "n": 3,
+              "query": "retry limits in OpenAI python library",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 5 / Planning and Task Decomposition / slide 31 (0.498) | Week 4 / Debugging and Controlling Agents   New Version / slide 52 (0.465) | Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17 (0.413)"
+            },
+            {
+              "n": 4,
+              "query": "client validate retry limits",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 5 / Planning and Task Decomposition / slide 31 (0.571) | Week 4 / Debugging and Controlling Agents   New Version / slide 52 (0.492) | Week 4 / Agents for Real Tasks.pptx / slide 55 (0.442)"
+            },
+            {
+              "n": 5,
+              "query": "application errors in OpenAI python library",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 15 (0.575) | Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17 (0.5) | Week 2 / Lab: Story Writing with Prompt Chaining OpenAI / cell 6 (0.507)"
+            }
+          ],
+          "reason": "I searched for specific changes related to 'v3.14.1' in the openai-python library, particularly concerning retry limits and application error handling, but found no curriculum material that would be made incorrect or outdated by these changes.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "langchain-ai/langsmith-sdk: v0.12.4",
+      "confidence": 0.75,
+      "verification_note": "confidence 0.75: 1 of 1 independent source(s) checked; repository exists; claim CONFIRMED via release record; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.12.4",
+          "note": "langchain-ai/langsmith-sdk: v0.12.4  (repository existence confirmed)",
+          "kind": "source",
+          "verified": true
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langsmith-sdk",
+          "note": "github_lookup('langchain-ai/langsmith-sdk') matched langchain-ai/langsmith-sdk (1060 stars, pushed 2026-09-19)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.12.4",
+          "note": "verify_release('langchain-ai/langsmith-sdk', 'v0.12.4') CONFIRMED release v0.12.4 (published 2026-09-09)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: langchain-ai/langsmith-sdk: v0.12.4.",
+        "This is a routine release. The curriculum search found nothing matching these specific changes, which means the release notes do not affect material we teach -- not that the library is uncovered.",
+        "Re-check if a later release announces a breaking change."
+      ],
+      "match": null,
+      "total_score": 2.5,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain-ai/langsmith-sdk"
+              },
+              "result_summary": "github_lookup('langchain-ai/langsmith-sdk') matched langchain-ai/langsmith-sdk (1060 stars, pushed 2026-09-19)"
+            },
+            {
+              "n": 2,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "langchain-ai/langsmith-sdk",
+                "version": "v0.12.4"
+              },
+              "result_summary": "verify_release('langchain-ai/langsmith-sdk', 'v0.12.4') CONFIRMED release v0.12.4 (published 2026-09-09)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain-ai/langsmith-sdk"
+              },
+              "observation": "github_lookup('langchain-ai/langsmith-sdk') matched langchain-ai/langsmith-sdk (1060 stars, pushed 2026-09-19)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "langchain-ai/langsmith-sdk",
+                "version": "v0.12.4"
+              },
+              "observation": "verify_release('langchain-ai/langsmith-sdk', 'v0.12.4') CONFIRMED release v0.12.4 (published 2026-09-09)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"langchain-ai/langsmith-sdk\" exists and is actively maintained, with 1060 stars and a recent push on September 19, 2026. Additionally, the claimed version v0.12.4 has been confirmed to exist and was published on September 9, 2026.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "langsmith-sdk",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 6 / Agent Observability and Monitoring / slide 32 (None) | Week 3 / Lab: Demo LangChain Splitter(solution) / cell 2 (0.452) | Week 5 / Agentic Frameworks and Orchestration / slide 35 (None)"
+            },
+            {
+              "n": 2,
+              "query": "support agents 1.7 and 1.8",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Introduction to Multi Agent Systems.pptx / slide 12 (0.453) | Week 6 / Agent Observability and Monitoring / slide 30 (0.435) | Week 5 / Lab: Exercise Implement a Multi Agent Workflow sol dynamic looping / cell 5 (0.486)"
+            },
+            {
+              "n": 3,
+              "query": "telemetry",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 6 / Agent Observability and Monitoring / slide 30 (0.38) | Week 2 / Prompt Engineering / slide 37 (0.304) | Week 4 / Lab: Demo Evaluating Agent Behavior (sol) / cell 7 (0.28)"
+            }
+          ],
+          "reason": "I searched for specific changes related to 'support agents 1.7 and 1.8' and 'telemetry' but did not find any direct curriculum content that is incompatible or outdated due to these changes.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "How We Built LangChain’s Paid Media Agent",
+      "confidence": 0.6,
+      "verification_note": "confidence 0.60: 0 of 1 independent source(s) checked; repository exists; claim NOT independently verified; first-party source, nothing independently checkable; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "https://www.langchain.com/blog/paid-media-agent",
+          "note": "How We Built LangChain’s Paid Media Agent",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "https://www.langchain.com/blog/how-we-built-langchains-gtm-agent",
+          "note": "How we built LangChain’s GTM Agent",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain",
+          "note": "github_lookup('langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain",
+          "note": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: How We Built LangChain’s Paid Media Agent.",
+        "Re-evaluate when further primary sources appear.",
+        "Not yet established enough to justify a curriculum change."
+      ],
+      "match": null,
+      "total_score": 2.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain"
+              },
+              "result_summary": "github_lookup('langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "n": 2,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain-ai/langchain"
+              },
+              "result_summary": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain"
+              },
+              "observation": "github_lookup('langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "iteration": 2,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain-ai/langchain"
+              },
+              "observation": "github_lookup('langchain-ai/langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "iteration": 3,
+              "thought": "The repository \"langchain-ai/langchain\" exists and is actively maintained, with a significant number of stars (146,323) and a recent push date (September 14, 2026). This indicates that it is a well-established project.\n\nNext, I will check if there are any specific version claims related to LangChain that need verification. However, the signals provided do not mention any specific version of LangChain. Therefore, I will not make any further tool calls.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "Paid Media Agent",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / AI Ethics / slide 26 (0.431) | Week 2 / AI Ethics / slide 12 (0.33) | Week 6 / Agent Evaluation / slide 16 (0.295)"
+            },
+            {
+              "n": 2,
+              "query": "GTM Agent",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 6 / Agent Evaluation / slide 16 (0.524) | Week 6 / Agent Evaluation / slide 18 (0.422) | Week 6 / Agent Evaluation / slide 30 (0.435)"
+            }
+          ],
+          "reason": "I searched for 'Paid Media Agent' and 'GTM Agent' but found no relevant content in the curriculum that directly teaches or uses these specific implementations, thus there is no concrete impact.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "Scaling Agents in Europe & The Middle East: Lessons from Schneider Electric, Vodafone, and monday.com",
+      "confidence": 0.6,
+      "verification_note": "confidence 0.60: 0 of 1 independent source(s) checked; repository exists; claim NOT independently verified; first-party source, nothing independently checkable; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "https://www.langchain.com/blog/scaling-agents-in-europe-the-middle-east-lessons-from-schneider-electric-vodafone-and-monday-com",
+          "note": "Scaling Agents in Europe & The Middle East: Lessons from Schneider Electric, Vodafone, and monday.com",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "https://www.langchain.com/blog/organizing-context-in-a-multi-agent-harness",
+          "note": "Organizing Context in a Multi-Agent Harness",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain",
+          "note": "github_lookup('langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: Scaling Agents in Europe & The Middle East: Lessons from Schneider Electric, Vodafone, and monday.com.",
+        "Re-evaluate when further primary sources appear.",
+        "Not yet established enough to justify a curriculum change."
+      ],
+      "match": null,
+      "total_score": 2.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain"
+              },
+              "result_summary": "github_lookup('langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The signals describe a trend related to scaling agents in Europe and the Middle East, with specific references to a blog on the Langchain website. To verify the existence of the Langchain repository, I will call the `github_lookup` tool.\n\nCalling `github_lookup` for \"langchain\".",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain"
+              },
+              "observation": "github_lookup('langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "iteration": 2,
+              "thought": "The `github_lookup` result shows that the repository \"langchain-ai/langchain\" exists and is described as \"The agent engineering platform.\" It has a significant number of stars (146,323) and was last pushed on September 14, 2026. This indicates that the repository is established and actively maintained.\n\nSince the signals do not mention a specific version of Langchain, there is no need to call the `verify_release` tool. I have checked the existence of the repository, and it is confirmed. \n\nNo further tool calls are necessary.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "Scaling Agents in Europe",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Lab: Demo From Single Agent to Multi Agent Workflow sol / cell 14 (0.543) | Week 5 / Agentic Frameworks and Orchestration / slide 5 (0.465) | Week 4 / Agents for Real Tasks.pptx / slide 71 (0.558)"
+            },
+            {
+              "n": 2,
+              "query": "multi-agent architectures",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 5 / Planning and Task Decomposition / slide 14 (0.624) | Week 4 / Agents for Real Tasks.pptx / slide 52 (0.678) | Week 5 / Lab: Demo Diagnosing Coordination Failures(Solution) / cell 7 (0.711)"
+            },
+            {
+              "n": 3,
+              "query": "LLMOps",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Intro(Solution) / cell 6 (0.386) | Week 3 / Lab: Demo peft lora qwen sol / cell 7 (None) | Week 2 / Introduction to LLMs / slide 8 (0.373)"
+            }
+          ],
+          "reason": "I searched for specific terms related to scaling agents, multi-agent architectures, and LLMOps, but the retrieved curriculum material did not demonstrate any outdated or incorrect content related to those topics.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+      "confidence": 0.6,
+      "verification_note": "confidence 0.60: 0 of 1 independent source(s) checked; first-party source, nothing independently checkable; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "huggingface_blog",
+          "tier": "primary",
+          "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+          "note": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "huggingface_blog",
+          "tier": "primary",
+          "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+          "note": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "",
+          "note": "github_lookup('Async GRPO with LoRA') found no repository named 'Async GRPO with LoRA' (top hits: MemoryWorld/agentic-grpo-longhorizon) -- treated as unverified",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "",
+          "note": "github_lookup('GRPO with TRL') found no repository named 'GRPO with TRL' (top hits: HodeTech/ForgeLM, ChaitanyaK77/Verifiable-Reasoning-Post-Training-for-Qwen3-8B, DeepGym/deepgym) -- treated as unverified",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL.",
+        "Re-evaluate when further primary sources appear.",
+        "Not yet established enough to justify a curriculum change."
+      ],
+      "match": null,
+      "total_score": 2.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "Async GRPO with LoRA"
+              },
+              "result_summary": "github_lookup('Async GRPO with LoRA') found no repository named 'Async GRPO with LoRA' (top hits: MemoryWorld/agentic-grpo-longhorizon) -- treated as unverified"
+            },
+            {
+              "n": 2,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "GRPO with TRL"
+              },
+              "result_summary": "github_lookup('GRPO with TRL') found no repository named 'GRPO with TRL' (top hits: HodeTech/ForgeLM, ChaitanyaK77/Verifiable-Reasoning-Post-Training-for-Qwen3-8B, DeepGym/deepgym) -- treated as unverified"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The first signal mentions a blog post on Hugging Face about \"Async GRPO with LoRA across HF Jobs.\" I will check if the repository or project related to this topic exists on GitHub to verify its presence and relevance. \n\nI'll start by calling the `github_lookup` tool with the query \"Async GRPO with LoRA.\" \n\nLet's see what the results are.",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "Async GRPO with LoRA"
+              },
+              "observation": "github_lookup('Async GRPO with LoRA') found no repository named 'Async GRPO with LoRA' (top hits: MemoryWorld/agentic-grpo-longhorizon) -- treated as unverified"
+            },
+            {
+              "iteration": 2,
+              "thought": "I found a repository named \"MemoryWorld/agentic-grpo-longhorizon\" related to GRPO training with LoRA. It has 1 star and was last pushed on May 16, 2026. This indicates that the project is relatively new and not widely adopted yet.\n\nSince the signals mention specific concepts but do not claim a specific version of a release, I will not call the `verify_release` tool. \n\nNext, I will check the second signal, which is another blog post about fine-tuning a model with GRPO. I will perform another `github_lookup` to see if there is a related repository for this topic. \n\nLet's proceed with that.",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "GRPO with TRL"
+              },
+              "observation": "github_lookup('GRPO with TRL') found no repository named 'GRPO with TRL' (top hits: HodeTech/ForgeLM, ChaitanyaK77/Verifiable-Reasoning-Post-Training-for-Qwen3-8B, DeepGym/deepgym) -- treated as unverified"
+            },
+            {
+              "iteration": 3,
+              "thought": "I found three repositories related to GRPO with TRL:\n\n1. **HodeTech/ForgeLM** - Config-driven LLM fine-tuning with safety evaluation and compliance features. It has 9 stars and was last pushed on July 21, 2026.\n2. **ChaitanyaK77/Verifiable-Reasoning-Post-Training-for-Qwen3-8B** - A single-GPU post-training pipeline for Qwen3-8B that combines various training methods, including GRPO. It has 7 stars and was last pushed on July 4, 2026.\n3. **DeepGym/deepgym** - RL training environments with verifiable rewards for coding agents, compatible with TRL. It has 6 stars and was last pushed on April 24, 2026.\n\nThese repositories indicate ongoing development in the area of GRPO and related fine-tuning techniques. However, none of the signals provided specific version claims to verify.\n\nSince I have gathered relevant information from the signals and checked for related repositories, I will stop here.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "Async GRPO with LoRA",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo peft lora qwen sol / cell 11 (0.393) | Week 3 / Finetuning PEFT / slide 45 (0.429) | Week 3 / Finetuning Intro / slide 94 (0.362)"
+            },
+            {
+              "n": 2,
+              "query": "LoRA",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo peft lora qwen sol / cell 11 (0.416) | Week 3 / Finetuning PEFT / slide 45 (0.556) | Week 3 / Finetuning PEFT / slide 44 (0.552)"
+            }
+          ],
+          "reason": "I searched for 'Async GRPO with LoRA' and 'LoRA' in the curriculum but did not find any evidence indicating that the content is outdated or incorrect due to recent changes in these technologies.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "Can Jev Be a Better Agent Evaluator?",
+      "confidence": 0.6,
+      "verification_note": "confidence 0.60: 0 of 1 independent source(s) checked; first-party source, nothing independently checkable; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "https://www.langchain.com/blog/jev-agent-evals-langsmith",
+          "note": "Can Jev Be a Better Agent Evaluator?",
+          "kind": "source",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: Can Jev Be a Better Agent Evaluator?.",
+        "Re-evaluate when further primary sources appear.",
+        "Not yet established enough to justify a curriculum change."
+      ],
+      "match": null,
+      "total_score": 2.0,
+      "trace": {
+        "verification": {
+          "steps": [],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The signal mentions a blog post from \"langchain_blog\" discussing Jev as an agent evaluator. To verify the existence of this blog and its relevance, I will check for the repository associated with \"langchain_blog\". \n\nI'll start by calling the `github_lookup` tool. \n\nQuery: \"langchain_blog\"",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "Agent Evaluator",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 6 / Lab: Exercise Build a Simple Automated Evaluator Solution / cell 5 (0.582) | Week 6 / Agent Evaluation / slide 2 (0.689) | Week 6 / Agent Evaluation / slide 19 (0.697)"
+            },
+            {
+              "n": 2,
+              "query": "Jev",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Lab: Demo Reference Agent System Walkthrough sol / cell 9 (0.242) | Week 4 / Lab: Reason–Act–Observe Loop sol / cell 16 (0.232) | Week 4 / Lab: Reason–Act–Observe Loop sol / cell 11 (0.224)"
+            },
+            {
+              "n": 3,
+              "query": "Jev as a Judge",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 6 / Agent Evaluation / slide 35 (0.362) | Week 3 / LLM Evaluation / slide 28 (0.361) | Week 3 / LLM Evaluation / slide 27 (0.337)"
+            },
+            {
+              "n": 4,
+              "query": "Jev Agent Evaluation",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 6 / Agent Evaluation / slide 2 (0.645) | Week 6 / Agent Evaluation / slide 3 (0.581) | Week 6 / Agent Evaluation / slide 4 (0.528)"
+            }
+          ],
+          "reason": "I searched for content related to 'Agent Evaluator' and 'Jev as a Judge,' but found no curriculum material that discusses changes in evaluation methods or integrates Jev into existing evaluations.",
+          "stopped_early": true,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "What Is Jev? A Guide to TypeSafe AI’s System One Model",
+      "confidence": 0.6,
+      "verification_note": "confidence 0.60: 0 of 1 independent source(s) checked; repository exists; claim NOT independently verified; first-party source, nothing independently checkable; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "https://www.langchain.com/blog/building-a-harness-with-jev",
+          "note": "What Is Jev? A Guide to TypeSafe AI’s System One Model",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "https://github.com/langchain-ai/langchain",
+          "note": "github_lookup('langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: What Is Jev? A Guide to TypeSafe AI’s System One Model.",
+        "Re-evaluate when further primary sources appear.",
+        "Not yet established enough to justify a curriculum change."
+      ],
+      "match": null,
+      "total_score": 2.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "langchain"
+              },
+              "result_summary": "github_lookup('langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The signal mentions a blog post about \"Jev\" and its relation to TypeSafe AI’s System One model, specifically in the context of LangChain. To verify the existence of the LangChain repository, I will call the `github_lookup` tool.\n\nI'll check for the repository \"langchain\" now.",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "langchain"
+              },
+              "observation": "github_lookup('langchain') matched langchain-ai/langchain (146323 stars, pushed 2026-09-14)"
+            },
+            {
+              "iteration": 2,
+              "thought": "The repository \"langchain-ai/langchain\" exists and is described as \"The agent engineering platform.\" It has a significant number of stars (146,323) and was last pushed on September 14, 2026. This indicates that the repository is active and likely well-established.\n\nNext, I will check if there is a specific version mentioned in the signal that needs to be verified. However, the signal does not mention a specific version of the LangChain repository. Since there is nothing to confirm regarding a version, I will stop here.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "Jev",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Lab: Demo Reference Agent System Walkthrough sol / cell 9 (0.242) | Week 4 / Lab: Reason–Act–Observe Loop sol / cell 16 (0.232) | Week 4 / Lab: Reason–Act–Observe Loop sol / cell 11 (0.224)"
+            },
+            {
+              "n": 2,
+              "query": "TypeSafe AI",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / AI Ethics / slide 4 (0.507) | Week 3 / Lab: Demo Langchian Overview(Solution) / cell 9 (0.505) | Week 2 / AI Ethics / slide 46 (0.485)"
+            }
+          ],
+          "reason": "I searched for 'Jev' and 'TypeSafe AI' but found no direct content in the curriculum that relies on or teaches about these specific elements, indicating no impact.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+      "confidence": 0.6,
+      "verification_note": "confidence 0.60: 0 of 1 independent source(s) checked; first-party source, nothing independently checkable; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "huggingface_blog",
+          "tier": "primary",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+          "note": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "",
+          "note": "github_lookup('huggingface_blog') found no repository named 'huggingface_blog' (top hits: deep-diver/paper-reviewer, OoriData/Toolio, sanchit-gandhi/notebooks) -- treated as unverified",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem.",
+        "This is not technical material this course would teach, so the absence of a curriculum match is expected rather than a gap.",
+        "No action needed unless the course scope changes."
+      ],
+      "match": null,
+      "total_score": 2.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "huggingface_blog"
+              },
+              "result_summary": "github_lookup('huggingface_blog') found no repository named 'huggingface_blog' (top hits: deep-diver/paper-reviewer, OoriData/Toolio, sanchit-gandhi/notebooks) -- treated as unverified"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The signal mentions a blog post on Hugging Face about pruning LLMs. I will check if the repository or blog post exists by using the `github_lookup` tool with the provided query. \n\nCalling `github_lookup` for \"huggingface_blog\".",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "huggingface_blog"
+              },
+              "observation": "github_lookup('huggingface_blog') found no repository named 'huggingface_blog' (top hits: deep-diver/paper-reviewer, OoriData/Toolio, sanchit-gandhi/notebooks) -- treated as unverified"
+            },
+            {
+              "iteration": 2,
+              "thought": "The `github_lookup` tool returned results for repositories related to Hugging Face, but it did not directly confirm the existence of the specific blog post mentioned in the signal. The repositories found are related to Hugging Face projects, but they do not indicate the presence of the blog post itself.\n\nSince the signal references a specific blog post URL, I will check if that URL is valid and leads to the mentioned content. However, I cannot directly verify the content of the URL through the tools available. \n\nAt this point, I have no further tool calls to make based on the information provided.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "pruning LLMs",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 5 / Lab: Demo Conversation Memory in AI Agents sol / cell 29 (0.477) | Week 5 / Agent Memory Systems / slide 34 (0.45) | Week 3 / Lab: Demo LangChain Intro(Solution) / cell 19 (0.483)"
+            },
+            {
+              "n": 2,
+              "query": "Ising Optimization Problem",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 29 (0.321) | Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 31 (0.28) | Week 5 / Agent Failure Modes / slide 21 (0.346)"
+            }
+          ],
+          "reason": "I searched for 'pruning LLMs' and 'Ising Optimization Problem' in the curriculum and found no evidence of content that would be affected by the trends discussed in the sources.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "Advisory Group on Mathematics and Artificial Intelligence",
+      "confidence": 0.6,
+      "verification_note": "confidence 0.60: 0 of 1 independent source(s) checked; first-party source, nothing independently checkable; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "openai_blog",
+          "tier": "primary",
+          "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+          "note": "Advisory Group on Mathematics and Artificial Intelligence",
+          "kind": "source",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: Advisory Group on Mathematics and Artificial Intelligence.",
+        "This is not technical material this course would teach, so the absence of a curriculum match is expected rather than a gap.",
+        "No action needed unless the course scope changes."
+      ],
+      "match": null,
+      "total_score": 2.0,
+      "trace": {
+        "verification": {
+          "steps": [],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The signal mentions an \"Advisory Group on Mathematics and Artificial Intelligence\" associated with OpenAI. Since this is a specific initiative rather than a software repository, there are no tools to call for verification. I will stop here as there is nothing further to check.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "Artificial Intelligence",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Introduction to AI Agents / slide 23 (0.466) | Week 2 / AI Ethics / slide 22 (0.398) | Week 2 / AI Ethics / slide 9 (None)"
+            },
+            {
+              "n": 2,
+              "query": "mathematics and artificial intelligence",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / AI Ethics / slide 22 (0.384) | Week 3 / Introduction to AI Agents / slide 23 (0.321) | Week 2 / AI Ethics / slide 9 (None)"
+            },
+            {
+              "n": 3,
+              "query": "AI and Mathematics relation",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 91 (None) | Week 3 / Introduction to AI Agents / slide 16 (0.508) | Week 3 / Introduction to AI Agents / slide 20 (0.486)"
+            },
+            {
+              "n": 4,
+              "query": "AI Ethics and societal challenges",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / AI Ethics / slide 4 (0.771) | Week 2 / AI Ethics / slide 10 (0.771) | Week 2 / AI Ethics / slide 8 (0.74)"
+            }
+          ],
+          "reason": "I searched for curriculum content related to artificial intelligence, mathematics, and their intersection but found no specific changes in the curriculum that would make its content incorrect or outdated due to the Advisory Group on Mathematics and Artificial Intelligence.",
+          "stopped_early": true,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "Building standards for the next phase of AI",
+      "confidence": 0.6,
+      "verification_note": "confidence 0.60: 0 of 1 independent source(s) checked; first-party source, nothing independently checkable; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "openai_blog",
+          "tier": "primary",
+          "url": "https://openai.com/index/building-standards-next-phase-ai",
+          "note": "Building standards for the next phase of AI",
+          "kind": "source",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: Building standards for the next phase of AI.",
+        "This is not technical material this course would teach, so the absence of a curriculum match is expected rather than a gap.",
+        "No action needed unless the course scope changes."
+      ],
+      "match": null,
+      "total_score": 2.0,
+      "trace": {
+        "verification": {
+          "steps": [],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The signal mentions a blog post from OpenAI about building standards for AI. Since this is a specific source and does not mention a repository or version, there are no tools to call at this moment. I will stop here.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "AI standards",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / AI Ethics / slide 36 (0.684) | Week 2 / AI Ethics / slide 103 (0.598) | Week 2 / AI Ethics / slide 37 (0.673)"
+            }
+          ],
+          "reason": "I searched for AI standards but did not find any specific references in the curriculum that would make the existing material incorrect or outdated due to the trend.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "Expanding OpenAI Academy with new learning paths",
+      "confidence": 0.6,
+      "verification_note": "confidence 0.60: 0 of 1 independent source(s) checked; first-party source, nothing independently checkable; single-source ceiling 0.75.",
+      "evidence": [
+        {
+          "source": "openai_blog",
+          "tier": "primary",
+          "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+          "note": "Expanding OpenAI Academy with new learning paths",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "",
+          "note": "github_lookup('openai_blog') found no repository named 'openai_blog' (top hits: hijkzzz/Awesome-LLM-Strawberry, saharmor/whisper-playground, skolo-online/ai-blog-writer-openai) -- treated as unverified",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: Expanding OpenAI Academy with new learning paths.",
+        "This is not technical material this course would teach, so the absence of a curriculum match is expected rather than a gap.",
+        "No action needed unless the course scope changes."
+      ],
+      "match": null,
+      "total_score": 2.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai_blog"
+              },
+              "result_summary": "github_lookup('openai_blog') found no repository named 'openai_blog' (top hits: hijkzzz/Awesome-LLM-Strawberry, saharmor/whisper-playground, skolo-online/ai-blog-writer-openai) -- treated as unverified"
+            }
+          ],
+          "stopped_early": false,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "The signal indicates that OpenAI Academy is expanding with new learning paths. To verify this trend, I will check if the blog post mentioned in the signal exists. I will use the `github_lookup` tool to see if there is a relevant repository or blog related to OpenAI Academy. \n\nI'll start by looking up \"openai_blog\".",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai_blog"
+              },
+              "observation": "github_lookup('openai_blog') found no repository named 'openai_blog' (top hits: hijkzzz/Awesome-LLM-Strawberry, saharmor/whisper-playground, skolo-online/ai-blog-writer-openai) -- treated as unverified"
+            },
+            {
+              "iteration": 2,
+              "thought": "The `github_lookup` tool returned three repositories related to OpenAI, but none of them directly correspond to an official OpenAI blog or the specific blog post mentioned in the signal. \n\nSince the signal references a specific blog post on the OpenAI website, I will now check the URL provided in the signal to see if the blog post about expanding OpenAI Academy exists. However, I cannot directly access URLs. \n\nGiven that I cannot verify the existence of the blog post through a tool, I will stop here as I have no further tools to call.",
+              "tool": "",
+              "tool_args": {},
+              "observation": "model concluded it has enough evidence"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": true,
+          "skipped_reason": "",
+          "steps": [
+            {
+              "n": 1,
+              "query": "OpenAI Academy",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 2 / Lab: DSPy Facility Support Analyzer Demo / cell 6 (0.42) | Week 2 / AI Ethics / slide 69 (0.389) | Week 6 / Lab: Demo End to End Agent Evaluation Solution / cell 4 (0.455)"
+            },
+            {
+              "n": 2,
+              "query": "AI skills",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 5 / Agentic Frameworks and Orchestration / slide 36 (None) | Week 4 / Introduction to Multi Agent Systems.pptx / slide 1 (0.585) | Week 4 / Agents for Real Tasks.pptx / slide 1 (0.585)"
+            },
+            {
+              "n": 3,
+              "query": "practical AI skills",
+              "filters": {
+                "week": null,
+                "type": null
+              },
+              "result_summary": "3 hit(s): Week 4 / Agents for Real Tasks.pptx / slide 77 (0.482) | Week 4 / Lab: Agent Failure Examples sol / cell 2 (0.404) | Week 4 / Agents for Real Tasks.pptx / slide 76 (0.409)"
+            }
+          ],
+          "reason": "I searched for 'OpenAI Academy', 'AI skills', and 'practical AI skills' but found no direct evidence in the curriculum that would indicate the new learning paths would make any existing content incorrect or outdated.",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    },
+    {
+      "trend": "How V7 gives AI agents institutional memory",
+      "confidence": 0.15,
+      "verification_note": "confidence 0.15: 0 of 1 independent source(s) checked; named repository not found -- claim treated as unverified.",
+      "evidence": [
+        {
+          "source": "openai_blog",
+          "tier": "primary",
+          "url": "https://openai.com/index/v7",
+          "note": "How V7 gives AI agents institutional memory",
+          "kind": "source",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "",
+          "note": "github_lookup('openai_blog') found no repository named 'openai_blog' (top hits: hijkzzz/Awesome-LLM-Strawberry, saharmor/whisper-playground, skolo-online/ai-blog-writer-openai) -- treated as unverified",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "",
+          "note": "github_lookup('V7') found no repository named 'V7' (top hits: arthelokyo/astrowind, demopark/sequelize-docs-Zh-CN, xeipuuv/gojsonschema) -- treated as unverified",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "",
+          "note": "github_lookup('openai') found no repository named 'openai' (top hits: NousResearch/hermes-agent, Significant-Gravitas/AutoGPT, microsoft/markitdown) -- treated as unverified",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "",
+          "note": "github_lookup('GPT-5.6') found no repository named 'GPT-5.6' (top hits: asgeirtj/system_prompts_leaks, xtekky/gpt4free, sashabaranov/go-openai) -- treated as unverified",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "",
+          "note": "verify_release('openai_blog', '5.6') failed: repo must be 'owner/name' -- not evidence",
+          "kind": "tool",
+          "verified": false
+        },
+        {
+          "source": "github",
+          "tier": "tool",
+          "url": "",
+          "note": "github_lookup('openai/openai') found no repository named 'openai/openai' (top hits: open-webui/open-webui, openai/codex, openai/whisper) -- treated as unverified",
+          "kind": "tool",
+          "verified": false
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: How V7 gives AI agents institutional memory.",
+        "Re-evaluate when further primary sources appear.",
+        "Curriculum coverage was NOT verified for this trend, so this recommendation is deliberately conservative and may understate the need for new material."
+      ],
+      "match": null,
+      "total_score": 1.0,
+      "trace": {
+        "verification": {
+          "steps": [
+            {
+              "n": 1,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai_blog"
+              },
+              "result_summary": "github_lookup('openai_blog') found no repository named 'openai_blog' (top hits: hijkzzz/Awesome-LLM-Strawberry, saharmor/whisper-playground, skolo-online/ai-blog-writer-openai) -- treated as unverified"
+            },
+            {
+              "n": 2,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "V7"
+              },
+              "result_summary": "github_lookup('V7') found no repository named 'V7' (top hits: arthelokyo/astrowind, demopark/sequelize-docs-Zh-CN, xeipuuv/gojsonschema) -- treated as unverified"
+            },
+            {
+              "n": 3,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai"
+              },
+              "result_summary": "github_lookup('openai') found no repository named 'openai' (top hits: NousResearch/hermes-agent, Significant-Gravitas/AutoGPT, microsoft/markitdown) -- treated as unverified"
+            },
+            {
+              "n": 4,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "GPT-5.6"
+              },
+              "result_summary": "github_lookup('GPT-5.6') found no repository named 'GPT-5.6' (top hits: asgeirtj/system_prompts_leaks, xtekky/gpt4free, sashabaranov/go-openai) -- treated as unverified"
+            },
+            {
+              "n": 5,
+              "tool": "verify_release",
+              "arguments": {
+                "repo": "openai_blog",
+                "version": "5.6"
+              },
+              "result_summary": "verify_release('openai_blog', '5.6') failed: repo must be 'owner/name' -- not evidence"
+            },
+            {
+              "n": 6,
+              "tool": "github_lookup",
+              "arguments": {
+                "query": "openai/openai"
+              },
+              "result_summary": "github_lookup('openai/openai') found no repository named 'openai/openai' (top hits: open-webui/open-webui, openai/codex, openai/whisper) -- treated as unverified"
+            }
+          ],
+          "stopped_early": true,
+          "mode": "agentic (LLM-driven tool loop)",
+          "reasoning": [
+            {
+              "iteration": 1,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai_blog"
+              },
+              "observation": "github_lookup('openai_blog') found no repository named 'openai_blog' (top hits: hijkzzz/Awesome-LLM-Strawberry, saharmor/whisper-playground, skolo-online/ai-blog-writer-openai) -- treated as unverified"
+            },
+            {
+              "iteration": 2,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "V7"
+              },
+              "observation": "github_lookup('V7') found no repository named 'V7' (top hits: arthelokyo/astrowind, demopark/sequelize-docs-Zh-CN, xeipuuv/gojsonschema) -- treated as unverified"
+            },
+            {
+              "iteration": 3,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai"
+              },
+              "observation": "github_lookup('openai') found no repository named 'openai' (top hits: NousResearch/hermes-agent, Significant-Gravitas/AutoGPT, microsoft/markitdown) -- treated as unverified"
+            },
+            {
+              "iteration": 4,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "GPT-5.6"
+              },
+              "observation": "github_lookup('GPT-5.6') found no repository named 'GPT-5.6' (top hits: asgeirtj/system_prompts_leaks, xtekky/gpt4free, sashabaranov/go-openai) -- treated as unverified"
+            },
+            {
+              "iteration": 5,
+              "thought": "call verify_release",
+              "tool": "verify_release",
+              "tool_args": {
+                "repo": "openai_blog",
+                "version": "5.6"
+              },
+              "observation": "verify_release('openai_blog', '5.6') failed: repo must be 'owner/name' -- not evidence"
+            },
+            {
+              "iteration": 6,
+              "thought": "call github_lookup",
+              "tool": "github_lookup",
+              "tool_args": {
+                "query": "openai/openai"
+              },
+              "observation": "github_lookup('openai/openai') found no repository named 'openai/openai' (top hits: open-webui/open-webui, openai/codex, openai/whisper) -- treated as unverified"
+            }
+          ]
+        },
+        "curriculum": {
+          "searched": false,
+          "skipped_reason": "verification confidence 0.15 is below 0.4, so the curriculum was not searched",
+          "steps": [],
+          "reason": "",
+          "stopped_early": false,
+          "search_failed": false
+        }
+      }
+    }
+  ]
+}

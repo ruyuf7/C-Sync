@@ -1,0 +1,362 @@
+[
+  {
+    "title": "openai/openai-python: v3.10.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "## [3.10.0](https://github.com/openai/openai-python/compare/v3.9.0...v3.10.0) (2026-09-08) ### Features * **api:** add GPT Image 2.5 models and image options ([#3824](https://github.com/openai/openai-python/issues/3824)) ([5b39c45](https://github.com/openai/openai-python/commit/5b39c453ee5ee8f46fba0bd9cb4ae47fa5ee6d51)) * **api:** add service-account API key expiration fields ([#3802](https://github.com/openai/openai-python/issues/3802)) ([f1cd7f0](https://github.com/openai/openai-python/commit/f1cd7f020210ec3fc71699fc46d90320ddbb411c))",
+    "url": "https://github.com/openai/openai-python/releases/tag/v3.10.0",
+    "published": "2026-09-09T00:17:39Z"
+  },
+  {
+    "title": "openai/openai-python: v3.9.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "## [3.9.0](https://github.com/openai/openai-python/compare/v3.8.0...v3.9.0) (2026-09-05) ### Features * **api:** Add prompt cache diagnostics ([#3800](https://github.com/openai/openai-python/issues/3800)) ([8326784](https://github.com/openai/openai-python/commit/83267847a0219ea8b584c9d60f92c7a4dffd392a)) * **api:** correct function argument completion event fields (openapi-545) ([#3801](https://github.com/openai/openai-python/issues/3801)) ([2a98f6a](https://github.com/openai/openai-python/commit/2a98f6a1dee448c6410531c89c2de0af4383c6a7)) ### Bug Fixes * **api:** accept incomplete web search c...",
+    "url": "https://github.com/openai/openai-python/releases/tag/v3.9.0",
+    "published": "2026-09-08T16:42:27Z"
+  },
+  {
+    "title": "langchain-ai/langchain: langchain-openai==1.6.1",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "Changes since langchain-openai==1.6.0 fix(openai): bump `max_completion_tokens` in cache breakpoint integration test (#40284) release(openai): 1.6.1 (#40268) chore(model-profiles): refresh model profile data (#40217) fix(openai): support Azure AD auth with OpenAI 3.8 (#40190) feat(openai): support async tools (#40208) feat(openai): support `configuration_update` (#40201) chore(model-profiles): refresh model profile data (#40171) fix(openai): route `gpt-5.6-sol` to responses API (#40133) chore(openai): fix tests (#39972) fix(openai): correct `reasoning_effort_levels` for gpt-5 and gpt-5.1 profi...",
+    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.1",
+    "published": "2026-09-08T14:20:40Z"
+  },
+  {
+    "title": "langchain-ai/langchain: langchain-core==1.6.2",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "Changes since langchain-core==1.6.1 release(core): 1.6.2 (#40209) feat(openai): support async tools (#40208) chore(deps): bump mistune from 3.3.0 to 3.3.3 in /libs/core (#40150) chore(deps): bump tornado from 6.5.7 to 6.5.8 in /libs/core (#40113) fix(core): avoid mutation in google-genai standard content (#40023) fix(core): avoid mutation in bedrock converse standard content (#40022)",
+    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.2",
+    "published": "2026-09-04T21:29:42Z"
+  },
+  {
+    "title": "openai/openai-python: v3.8.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "## [3.8.0](https://github.com/openai/openai-python/compare/v3.7.0...v3.8.0) (2026-09-03) ### Features * **api:** add gpt-6-astra and related features ([#3791](https://github.com/openai/openai-python/issues/3791)) ([09f446f](https://github.com/openai/openai-python/commit/09f446f5f8623d79464568dc91b9dc258e74bcae)) ### Documentation * add canonical SDK security model ([#3778](https://github.com/openai/openai-python/issues/3778)) ([2a097b9](https://github.com/openai/openai-python/commit/2a097b991bb23a26bde9da8ea286f850ac1329f1))",
+    "url": "https://github.com/openai/openai-python/releases/tag/v3.8.0",
+    "published": "2026-09-03T19:50:24Z"
+  },
+  {
+    "title": "langchain-ai/langchain: langchain==1.4.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "Changes since langchain==1.3.18 docs(langchain): runnable `langchain.mcp` examples (#39976) feat(langchain): `langchain.mcp` namespace, `MCPAdapter` (#39939) perf(anthropic,langchain): omit middleware trace inputs (#40098) fix(langchain): include model destination in agent tool routing (#38355) chore(langchain): bump vcrpy test dependency minimum to `>=8.2.0` (#39942)",
+    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.0",
+    "published": "2026-09-03T16:59:53Z"
+  },
+  {
+    "title": "langchain-ai/langchain: langchain-anthropic==1.7.1",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "Changes since langchain-anthropic==1.7.0 release(anthropic): 1.7.1 (#40181) perf(anthropic,langchain): omit middleware trace inputs (#40098) feat(anthropic): add Claude Fable 5.1 support (#40106)",
+    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.1",
+    "published": "2026-09-03T15:42:00Z"
+  },
+  {
+    "title": "openai/openai-python: v3.7.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "## [3.7.0](https://github.com/openai/openai-python/compare/v3.6.0...v3.7.0) (2026-09-02) ### Features * **api:** update usage APIs and documentation ([#3779](https://github.com/openai/openai-python/issues/3779)) ([6f0da16](https://github.com/openai/openai-python/commit/6f0da16573086401a7b171f4bd14a78f22c9d0e9)) ### Bug Fixes * avoid repeated numpy checks for embeddings ([#3757](https://github.com/openai/openai-python/issues/3757)) ([b19c216](https://github.com/openai/openai-python/commit/b19c2161b1eac80fbf1f6f67a64a50af99c53356))",
+    "url": "https://github.com/openai/openai-python/releases/tag/v3.7.0",
+    "published": "2026-09-02T01:30:12Z"
+  },
+  {
+    "title": "openai/openai-python: v3.6.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "## [3.6.0](https://github.com/openai/openai-python/compare/v3.5.0...v3.6.0) (2026-08-27) ### Features * **api:** add compute_units to Responses and Chat Completions usage ([#3749](https://github.com/openai/openai-python/issues/3749)) ([52421d1](https://github.com/openai/openai-python/commit/52421d197e96b4480fcc16e78345578996452c79)) ### Bug Fixes * **auth:** harden X.509 workload identity integration ([#3740](https://github.com/openai/openai-python/issues/3740)) ([fc3ad6c](https://github.com/openai/openai-python/commit/fc3ad6c55a1a250e16707396e86d7373f690a0fc)) ### Chores * **deps-dev:** bump ...",
+    "url": "https://github.com/openai/openai-python/releases/tag/v3.6.0",
+    "published": "2026-08-28T22:28:31Z"
+  },
+  {
+    "title": "langchain-ai/langchain: langchain-fireworks==1.6.1",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "Changes since langchain-fireworks==1.6.0 release(fireworks): 1.6.1 (#39975) fix(fireworks): drop reasoning history blocks (#39973) chore(model-profiles): refresh model profile data (#39844)",
+    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.1",
+    "published": "2026-08-27T21:56:28Z"
+  },
+  {
+    "title": "langchain-ai/langchain: langchain==1.3.18",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "Changes since langchain==1.3.17 release(langchain): 1.3.18 (#39966) fix(langchain): preserve content-block shape in PIIMiddleware redaction (#39894) fix(core): shore up indexing in genai v1 streaming content (#39964)",
+    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.3.18",
+    "published": "2026-08-27T17:33:28Z"
+  },
+  {
+    "title": "openai/openai-python: v3.5.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "## [3.5.0](https://github.com/openai/openai-python/compare/v3.4.0...v3.5.0) (2026-08-27) ### Features * **api:** make function call output call IDs optional ([#3738](https://github.com/openai/openai-python/issues/3738)) ([c74501d](https://github.com/openai/openai-python/commit/c74501d7dc6946633fead7883ad02d8a188cf605))",
+    "url": "https://github.com/openai/openai-python/releases/tag/v3.5.0",
+    "published": "2026-08-27T01:00:03Z"
+  },
+  {
+    "title": "openai/openai-python: v3.4.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "## [3.4.0](https://github.com/openai/openai-python/compare/v3.3.1...v3.4.0) (2026-08-25) ### Features * **api:** Add obfuscation field to ChatCompletionChunk ([#3690](https://github.com/openai/openai-python/issues/3690)) ([c7d8e1d](https://github.com/openai/openai-python/commit/c7d8e1d26be1f958e55c80f26b648f768afabdf2)) * **api:** add project residency configuration and cost quantity units ([#3726](https://github.com/openai/openai-python/issues/3726)) ([bc4f8ef](https://github.com/openai/openai-python/commit/bc4f8efdbc1f8fa6b78935e205780e259d83576d)) ### Bug Fixes * **api:** encode Realtime ca...",
+    "url": "https://github.com/openai/openai-python/releases/tag/v3.4.0",
+    "published": "2026-08-26T21:48:40Z"
+  },
+  {
+    "title": "openai/openai-python: v3.3.1",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "## [3.3.1](https://github.com/openai/openai-python/compare/v3.3.0...v3.3.1) (2026-08-19) ### Bug Fixes * **deps:** update dependencies with published security fixes ([#3680](https://github.com/openai/openai-python/issues/3680)) ([53aa4fc](https://github.com/openai/openai-python/commit/53aa4fc68b65f42456cafaaa5ff4b0d317184752)) ### Chores * **build:** migrate to uv ([#3653](https://github.com/openai/openai-python/issues/3653)) ([b37e85d](https://github.com/openai/openai-python/commit/b37e85d8fe9cd2b23862dbc62716d38e2cacaf92)) * **deps:** remove jsonschema and unused fixture-validation dependenc...",
+    "url": "https://github.com/openai/openai-python/releases/tag/v3.3.1",
+    "published": "2026-08-19T16:30:47Z"
+  },
+  {
+    "title": "openai/openai-python: v3.3.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "## [3.3.0](https://github.com/openai/openai-python/compare/v3.2.0...v3.3.0) (2026-08-18) ### Features * support named data-residency endpoints ([#3646](https://github.com/openai/openai-python/issues/3646)) ([11ee914](https://github.com/openai/openai-python/commit/11ee91475694d9cd77813763707fbadf68806d4f)) ### Bug Fixes * require patched optional networking dependencies ([#3651](https://github.com/openai/openai-python/issues/3651)) ([40e56de](https://github.com/openai/openai-python/commit/40e56de55166a55be3572fdf9750145d4458e144)) ### Chores * remove unused dependencies and pin build tooling ([...",
+    "url": "https://github.com/openai/openai-python/releases/tag/v3.3.0",
+    "published": "2026-08-18T21:17:03Z"
+  },
+  {
+    "title": "openai/openai-python: v3.2.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "## [3.2.0](https://github.com/openai/openai-python/compare/v3.1.0...v3.2.0) (2026-08-17) ### Features * add Bedrock Runtime endpoint support (SDK-290) ([#3623](https://github.com/openai/openai-python/issues/3623)) ([86267d2](https://github.com/openai/openai-python/commit/86267d2737e61e389e9260a18f99bcc1a634811b)) * **api:** Add shell call streaming events and new service/image types ([#3635](https://github.com/openai/openai-python/issues/3635)) ([ff14a33](https://github.com/openai/openai-python/commit/ff14a33c1b21c36b9e43a0150a3818ee3aa3712a))",
+    "url": "https://github.com/openai/openai-python/releases/tag/v3.2.0",
+    "published": "2026-08-17T19:13:27Z"
+  },
+  {
+    "title": "Organizing Context in a Multi-Agent Harness",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "Learn how context modes in deepagents help subagents fork a supervisor's context or start isolated \u2014 for faster, cheaper, more focused multi-agent work.",
+    "url": "https://www.langchain.com/blog/organizing-context-in-a-multi-agent-harness",
+    "published": "2026-09-08T15:07:23+00:00"
+  },
+  {
+    "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+    "url": "https://openai.com/index/codex-quantum-computing-experiments",
+    "published": "2026-09-08T14:00:00+00:00"
+  },
+  {
+    "title": "The Work Now Within Reach",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish\u2014and make growth more economical.",
+    "url": "https://openai.com/index/the-work-now-within-reach",
+    "published": "2026-09-08T10:00:00+00:00"
+  },
+  {
+    "title": "Introducing ChatGPT Images 2.5",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+    "published": "2026-09-08T08:30:00+00:00"
+  },
+  {
+    "title": "On the Navier\u2013Stokes Millennium Prize Problem",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "We\u2019re sharing an AI-generated solution to the Navier\u2013Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+    "url": "https://openai.com/index/navier-stokes-solution",
+    "published": "2026-09-08T07:00:00+00:00"
+  },
+  {
+    "title": "Funding grants for new research into AI and teen development",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "Apply now for OpenAI\u2019s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+    "url": "https://openai.com/index/teen-development-research-grants",
+    "published": "2026-09-08T06:00:00+00:00"
+  },
+  {
+    "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+    "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+    "published": "2026-09-07T21:00:00+00:00"
+  },
+  {
+    "title": "1Password increases engineering productivity 21% with Codex",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
+    "url": "https://openai.com/index/1password",
+    "published": "2026-09-07T21:00:00+00:00"
+  },
+  {
+    "title": "Supporting independent journalism in Ukraine",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
+    "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+    "published": "2026-09-06T21:00:00+00:00"
+  },
+  {
+    "title": "An Alien Mind",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
+    "url": "https://openai.com/index/an-alien-mind",
+    "published": "2026-09-06T06:00:00+00:00"
+  },
+  {
+    "title": "Research acceleration: The view inside OpenAI",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+    "published": "2026-09-06T05:00:00+00:00"
+  },
+  {
+    "title": "MCP in LangChain: Stateless Protocol, Elicitation, and More!",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "MCP support now lives in langchain.mcp, built on FastMCP for the 2026-07-28 spec, with elicitation handled as a LangGraph interrupt and tool lists cached.",
+    "url": "https://www.langchain.com/blog/mcp-in-langchain-stateless-protocol-elicitation-and-more",
+    "published": "2026-09-04T03:13:59+00:00"
+  },
+  {
+    "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+    "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+    "published": "2026-09-03T10:15:00+00:00"
+  },
+  {
+    "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
+    "url": "https://openai.com/index/playco-game-prototyping-with-astra",
+    "published": "2026-09-03T09:00:00+00:00"
+  },
+  {
+    "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
+    "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
+    "published": "2026-09-03T09:00:00+00:00"
+  },
+  {
+    "title": "GPT-6 Astra: A new generation of intelligence",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science.",
+    "url": "https://openai.com/index/gpt-6-astra",
+    "published": "2026-09-03T08:00:00+00:00"
+  },
+  {
+    "title": "Scaling Agents in Europe & The Middle East: Lessons from Schneider Electric, Vodafone, and monday.com",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "A guide on scaling agents in Europe & the Middle East to see how Schneider Electric, Vodafone, and monday.com are approaching production AI at scale, from establishing shared agent platforms and LLMOps practices to designing multi-agent architectures with stronger observability, evaluation, and control.",
+    "url": "https://www.langchain.com/blog/scaling-agents-in-europe-the-middle-east-lessons-from-schneider-electric-vodafone-and-monday-com",
+    "published": "2026-09-03T03:21:13+00:00"
+  },
+  {
+    "title": "Safety overview: GPT-6 Astra",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework.",
+    "url": "https://openai.com/index/safety-overview-gpt-6-astra",
+    "published": "2026-09-02T21:00:00+00:00"
+  },
+  {
+    "title": "August 2026: LangChain Newsletter \u2014 Managed Deep Agents, LLM Gateway, and More",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "Managed Deep Agents and LLM Gateway hit public beta, plus Deep Agents v0.7, Tuned Evaluators, Bring Your Own Cloud on AWS, and LangSmith Engine upgrades.",
+    "url": "https://www.langchain.com/blog/august-2026-langchain-newsletter",
+    "published": "2026-08-27T01:26:36+00:00"
+  },
+  {
+    "title": "LangSmith LLM Gateway: Runtime Controls for Agents",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "LangSmith LLM Gateway is in public beta: spend caps, rate limits, model fallbacks and PII redaction for production agents, without provider lock-in.",
+    "url": "https://www.langchain.com/blog/langsmith-llm-gateway-runtime-controls-for-production-agents",
+    "published": "2026-08-26T13:53:53+00:00"
+  },
+  {
+    "title": "How LangSmith and LangChain OSS Help You Meet EU AI Act Requirements",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "The EU AI Act compliance deadline is August 2, 2026. Learn what the EU AI Act requires, and how LangSmith and LangChain OSS products help you meet each requirement.",
+    "url": "https://www.langchain.com/blog/langsmith-langchain-oss-eu-ai-act",
+    "published": "2026-08-26T13:53:53+00:00"
+  },
+  {
+    "title": "How Factory used LangSmith to automate their feedback loop and improve iteration speed by 2x",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "How Factory AI uses LangSmith to debug issues and close the product feedback loop, resulting in a 2x improvement in iteration speed.",
+    "url": "https://www.langchain.com/blog/customers-factory",
+    "published": "2026-08-26T13:53:53+00:00"
+  },
+  {
+    "title": "Aligning LLM-as-a-Judge with Human Preferences",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "Deep dive into self-improving evaluators in LangSmith, motivated by the rise of LLM-as-a-Judge evaluators plus research on few-shot learning and aligning human preferences.",
+    "url": "https://www.langchain.com/blog/aligning-llm-as-a-judge-with-human-preferences",
+    "published": "2026-08-26T13:53:53+00:00"
+  },
+  {
+    "title": "Announcing LangGraph v0.1 & LangGraph Cloud: Running agents at scale, reliably",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "Our new infrastructure for running agents at scale, LangGraph Cloud, is available in beta. We also have a new stable release of LangGraph.",
+    "url": "https://www.langchain.com/blog/langgraph-cloud",
+    "published": "2026-08-26T13:53:53+00:00"
+  },
+  {
+    "title": "How Podium optimized agent behavior and reduced engineering intervention by 90% with LangSmith",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "See how Podium tests across the lifecycle development of their AI employee agent, using LangSmith for dataset curation and finetuning. They improved agent F1 response quality to 98% and reduced the need for engineering intervention by 90%.",
+    "url": "https://www.langchain.com/blog/customers-podium",
+    "published": "2026-08-26T13:53:53+00:00"
+  },
+  {
+    "title": "Pushing LangSmith to new limits with Replit Agent's complex workflows",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "See how Replit built their agents atop LangGraph and integrated LangSmith to pinpoint issues, improve the performance of their agents, and enable human-in-the-loop workflows.",
+    "url": "https://www.langchain.com/blog/customers-replit",
+    "published": "2026-08-26T13:53:53+00:00"
+  },
+  {
+    "title": "LangChain's Second Birthday",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "Reflections on how LangChain has evolved \u2014 including our products, ecosystem, and community \u2014 over the past two years, and where we're headed next.",
+    "url": "https://www.langchain.com/blog/langchain-second-birthday",
+    "published": "2026-08-26T13:53:53+00:00"
+  },
+  {
+    "title": "LangSmith: Redesigned product homepage and Resource Tags for better organization",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "LangSmith's homepage is now organized into Observability, Evaluation, and Prompt Engineering. Learn why we organized the homepage like this. Plus, see our latest Resource Tags updates.",
+    "url": "https://www.langchain.com/blog/langsmith-homepage-redesign-and-resource-tags",
+    "published": "2026-08-26T13:53:53+00:00"
+  },
+  {
+    "title": "LangChain State of AI 2024 Report",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "Dive into LangSmith product usage patterns that show how the AI ecosystem and the way people are building LLM apps is evolving.",
+    "url": "https://www.langchain.com/blog/langchain-state-of-ai-2024",
+    "published": "2026-08-26T13:53:53+00:00"
+  }
+]

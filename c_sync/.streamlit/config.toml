@@ -1,0 +1,17 @@
+[theme]
+base = "dark"
+primaryColor = "#7C3AED"
+backgroundColor = "#080C17"
+secondaryBackgroundColor = "#111827"
+textColor = "#F0F4FF"
+linkColor = "#67E8F9"
+borderColor = "#28364C"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+headingFont = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap"
+chartCategoricalColors = ["#A78BFA", "#67E8F9", "#F0ABFC", "#34D399", "#FBBF24"]
+
+[server]
+headless = true
+
+[client]
+toolbarMode = "viewer"

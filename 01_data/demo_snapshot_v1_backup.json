@@ -1,0 +1,392 @@
+{
+  "captured_at": "2026-09-13T17:38:18.908343+00:00",
+  "source_signals": "01_data/signals.json",
+  "signals_in_file": 45,
+  "clusters_total": 41,
+  "clusters_processed": 15,
+  "duplicates_collapsed": 2,
+  "tier_counts": {
+    "update_existing_material": 5,
+    "add_optional_content": 1,
+    "add_new_lesson": 1,
+    "watch": 6
+  },
+  "recommendations": [
+    {
+      "trend": "langchain-ai/langchain: langchain-openai==1.6.1",
+      "confidence": 0.85,
+      "verification_note": "The project langchain-ai/langchain is real and well-established with over 146,000 stars. The version langchain-openai==1.6.1 was confirmed to exist in its release history.",
+      "evidence": [
+        {
+          "source": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.1",
+          "tier": "primary",
+          "url": "",
+          "note": "The version langchain-openai==1.6.1 was found and detailed in the release history."
+        },
+        {
+          "source": "https://github.com/langchain-ai/langchain",
+          "tier": "primary",
+          "url": "",
+          "note": "The repository describes itself as 'The agent engineering platform' and has significant community engagement."
+        }
+      ],
+      "recommended_action": "update_existing_material",
+      "action_plan": [
+        "Update the import statement in cell 8 of the Week 4 Lab to reflect the new module path for langchain-openai. This change is necessary to ensure compatibility with the latest version of the library.",
+        "Verify that all subsequent references to ChatOpenAI in the lab notebook are consistent with the updated import. This will help maintain clarity and functionality throughout the exercise.",
+        "Test the updated code in cell 8 to confirm that the changes work as intended and that there are no import errors. This step is crucial for ensuring that the lab exercise runs smoothly for students."
+      ],
+      "match": {
+        "week": 4,
+        "topic": "Exercise Implement Tool Error Handling sol",
+        "source_file": "Exercise_Implement_Tool_Error_Handling__sol.ipynb",
+        "slide_number": 8,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.651,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 4 / Lab: Exercise Implement Tool Error Handling sol / cell 8"
+      },
+      "total_score": 5.0
+    },
+    {
+      "trend": "Announcing LangGraph v0.1 & LangGraph Cloud: Running agents at scale, reliably",
+      "confidence": 0.85,
+      "verification_note": "The announcement of LangGraph v0.1 and its cloud service was confirmed through an official blog post from Langchain, which independently corroborated the claims. The infrastructure details and beta availability were explicitly mentioned.",
+      "evidence": [
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "",
+          "note": "Announced the release of LangGraph v0.1 and LangGraph Cloud."
+        }
+      ],
+      "recommended_action": "update_existing_material",
+      "action_plan": [
+        "Update the import statement in cell 34 to reflect the new module path for LangGraph.",
+        "Replace the function call in the code cell to use LangGraph's create_react_agent instead of the previous function.",
+        "Ensure that any references to the old agent in the surrounding text are updated to align with the new functionality provided by LangGraph.",
+        "Test the updated code cell to confirm that it executes correctly with the new imports and function calls."
+      ],
+      "match": {
+        "week": 3,
+        "topic": "Lab LangChain wikipedia(studentVersion)",
+        "source_file": "Lab_LangChain_wikipedia(studentVersion).ipynb",
+        "slide_number": 34,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": null,
+        "exact_match": "LangGraph",
+        "content_type": "lab",
+        "citation": "Week 3 / Lab: Lab LangChain wikipedia(studentVersion) / cell 34"
+      },
+      "total_score": 5.0
+    },
+    {
+      "trend": "openai/openai-python: v3.10.0",
+      "confidence": 0.9,
+      "verification_note": "The release v3.10.0 of the openai-python project was confirmed through its GitHub release records, showing it was published on September 9, 2026.",
+      "evidence": [
+        {
+          "source": "https://github.com/openai/openai-python/releases/tag/v3.10.0",
+          "tier": "primary",
+          "url": "",
+          "note": "Confirmed the release tag v3.10.0 exists and is publicly accessible."
+        }
+      ],
+      "recommended_action": "update_existing_material",
+      "action_plan": [
+        "Update the import statement in cell 17 of the Week 3 Lab to reflect the new version of the OpenAI Python library.",
+        "Revise the text in cell 17 to include a reference to the updated model list available in version v3.10.0 of the OpenAI library.",
+        "Ensure that any examples or code snippets in cell 17 are compatible with the new features or changes introduced in the v3.10.0 release.",
+        "Also triggered by 1 related trend(s) targeting the same material: openai/openai-python: v3.8.0."
+      ],
+      "match": {
+        "week": 3,
+        "topic": "Demo LangChain Document Chat using OpenAI(solution)",
+        "source_file": "Demo_LangChain_Document_Chat_using_OpenAI(solution).ipynb",
+        "slide_number": 17,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.734,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 17"
+      },
+      "total_score": 5.0
+    },
+    {
+      "trend": "langchain-ai/langchain: langchain==1.4.0",
+      "confidence": 0.85,
+      "verification_note": "The claims are confirmed by primary sources including the GitHub repository for langchain which shows changes related to version 1.4.0 and a blog post detailing new features including MCP support.",
+      "evidence": [
+        {
+          "source": "github / langchain-ai/langchain",
+          "tier": "primary",
+          "url": "",
+          "note": "Confirmed changes related to langchain==1.4.0."
+        },
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "",
+          "note": "Detailed overview of MCP support and features in LangChain."
+        }
+      ],
+      "recommended_action": "update_existing_material",
+      "action_plan": [
+        "Update the lecture slide on Week 4 / Designing Tool Systems, slide 40 to reflect the new features and improvements introduced in langchain version 1.4.0, specifically focusing on the enhancements related to Agent-Directed Execution.",
+        "Revise the text to include a brief explanation of how the new version supports MCP (Multi-Context Processing) and its implications for dynamic decision-making in tool systems.",
+        "Ensure that any references to the previous version are removed to avoid confusion and maintain clarity in the material.",
+        "Review the overall structure of the slide to ensure it aligns with the updated content and effectively communicates the new concepts introduced in the latest version."
+      ],
+      "match": {
+        "week": 4,
+        "topic": "Designing Tool Systems   New Version",
+        "source_file": "Designing Tool Systems - New Version.pdf",
+        "slide_number": 40,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.607,
+        "exact_match": null,
+        "content_type": "slides",
+        "citation": "Week 4 / Designing Tool Systems   New Version / slide 40"
+      },
+      "total_score": 4.5
+    },
+    {
+      "trend": "openai/openai-python: v3.3.1",
+      "confidence": 1.0,
+      "verification_note": "The release v3.3.1 of the openai/openai-python library was confirmed through the project's official GitHub repository, which provides detailed release notes and a comparison with the previous version.",
+      "evidence": [
+        {
+          "source": "https://github.com/openai/openai-python/releases/tag/v3.3.1",
+          "tier": "primary",
+          "url": "",
+          "note": "Confirmed the release details and changes made in v3.3.1."
+        }
+      ],
+      "recommended_action": "update_existing_material",
+      "action_plan": [
+        "Update the import statement in cell 15 of the Week 3 lab notebook to reflect the new version of the openai library.",
+        "Ensure that the OpenAI API key definition follows the updated import to maintain functionality.",
+        "Review the lab instructions to confirm that they align with the features and changes introduced in version 3.3.1 of the openai library.",
+        "Test the updated code in cell 15 to verify that it executes correctly with the new library version."
+      ],
+      "match": {
+        "week": 3,
+        "topic": "Demo LangChain Document Chat using OpenAI(solution)",
+        "source_file": "Demo_LangChain_Document_Chat_using_OpenAI(solution).ipynb",
+        "slide_number": 15,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.615,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 3 / Lab: Demo LangChain Document Chat using OpenAI(solution) / cell 15"
+      },
+      "total_score": 4.5
+    },
+    {
+      "trend": "openai/openai-python: v3.6.0",
+      "confidence": 1.0,
+      "verification_note": "The release v3.6.0 of openai/openai-python is confirmed through the GitHub repository which details its features and bug fixes.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "",
+          "note": "Released v3.6.0 on 2026-08-27 with new features and bug fixes."
+        }
+      ],
+      "recommended_action": "add_optional_content",
+      "action_plan": [
+        "Update the lab notebook cell 15 to include a section on how to implement conversation memory with the RetrievalQAChain, referencing the features from the new OpenAI library version.",
+        "Incorporate an example demonstrating how to pass in chat history for follow-up questions, ensuring it aligns with the latest capabilities of the library.",
+        "Add a brief explanation of the benefits of using conversation memory in the context of the lab activity to enhance student understanding.",
+        "Ensure that all references to the OpenAI library are updated to reflect the new version, including any necessary import statements.",
+        "Also triggered by 1 related trend(s) targeting the same material: openai/openai-python: v3.4.0."
+      ],
+      "match": {
+        "week": 3,
+        "topic": "Lab LangChain QA(studentVersion) ipynb",
+        "source_file": "Lab_LangChain_QA(studentVersion)_ipynb.ipynb",
+        "slide_number": 15,
+        "matched_text": "[Course excerpt removed from the public copy. The course material is not ours to redistribute.]",
+        "similarity": 0.498,
+        "exact_match": null,
+        "content_type": "lab",
+        "citation": "Week 3 / Lab: Lab LangChain QA(studentVersion) ipynb / cell 15"
+      },
+      "total_score": 4.0
+    },
+    {
+      "trend": "Organizing Context in a Multi-Agent Harness",
+      "confidence": 0.85,
+      "verification_note": "The concept of organizing context in a multi-agent harness is confirmed by two strong primary sources from the Langchain blog, detailing how context modes in deepagents improve multi-agent work.",
+      "evidence": [
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "",
+          "note": "It discusses how context modes in deepagents assist subagents in managing context for better efficiency."
+        },
+        {
+          "source": "langchain_blog",
+          "tier": "primary",
+          "url": "",
+          "note": "It outlines the strategies for scaling agents and designing multi-agent architectures."
+        }
+      ],
+      "recommended_action": "add_new_lesson",
+      "action_plan": [
+        "Create a new lesson titled \"Organizing Context in a Multi-Agent Harness\" in the curriculum module.",
+        "Include a section that summarizes the key concepts from the Langchain blog regarding context modes in deepagents and their impact on multi-agent collaboration.",
+        "Develop assessment questions that evaluate understanding of how organizing context can enhance multi-agent work, ensuring they align with the lesson objectives.",
+        "Schedule a review session with the curriculum team to finalize the lesson content and ensure it meets educational standards."
+      ],
+      "match": null,
+      "total_score": 3.0
+    },
+    {
+      "trend": "openai/openai-python: v3.9.0",
+      "confidence": 0.85,
+      "verification_note": "The release v3.9.0 of openai/openai-python was confirmed on GitHub, demonstrating its existence and features. The source is primary and independent.",
+      "evidence": [
+        {
+          "source": "https://github.com/openai/openai-python/compare/v3.8.0...v3.9.0",
+          "tier": "primary",
+          "url": "",
+          "note": "The GitHub page confirms the release v3.9.0 with details on new features."
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: openai/openai-python: v3.9.0.",
+        "This is a routine release. The curriculum search found nothing matching these specific changes, which means the release notes do not affect material we teach -- not that the library is uncovered.",
+        "Re-check if a later release announces a breaking change."
+      ],
+      "match": null,
+      "total_score": 3.0
+    },
+    {
+      "trend": "langchain-ai/langchain: langchain-core==1.6.2",
+      "confidence": 0.85,
+      "verification_note": "The project 'langchain-ai/langchain' exists and has a release for version 'langchain-core==1.6.2' which is confirmed by the project's GitHub release record.",
+      "evidence": [
+        {
+          "source": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.2",
+          "tier": "primary",
+          "url": "",
+          "note": "Release for langchain-core==1.6.2 is confirmed."
+        },
+        {
+          "source": "https://github.com/langchain-ai/langchain",
+          "tier": "primary",
+          "url": "",
+          "note": "Project exists with significant community engagement (over 146k stars)."
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: langchain-ai/langchain: langchain-core==1.6.2.",
+        "This is a routine release. The curriculum search found nothing matching these specific changes, which means the release notes do not affect material we teach -- not that the library is uncovered.",
+        "Re-check if a later release announces a breaking change."
+      ],
+      "match": null,
+      "total_score": 3.0
+    },
+    {
+      "trend": "openai/openai-python: v3.7.0",
+      "confidence": 0.85,
+      "verification_note": "The project openai/openai-python exists and the specific version 3.7.0 has been confirmed through its GitHub release record.",
+      "evidence": [
+        {
+          "source": "github",
+          "tier": "primary",
+          "url": "",
+          "note": "The release v3.7.0 was officially published on GitHub."
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: openai/openai-python: v3.7.0.",
+        "This is a routine release. The curriculum search found nothing matching these specific changes, which means the release notes do not affect material we teach -- not that the library is uncovered.",
+        "Re-check if a later release announces a breaking change."
+      ],
+      "match": null,
+      "total_score": 3.0
+    },
+    {
+      "trend": "openai/openai-python: v3.5.0",
+      "confidence": 0.85,
+      "verification_note": "The repository for openai-python exists and the claimed release v3.5.0 was officially documented in the GitHub release notes.",
+      "evidence": [
+        {
+          "source": "github/openai/openai-python",
+          "tier": "primary",
+          "url": "",
+          "note": "Release v3.5.0 announced with features updated on August 27, 2026."
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: openai/openai-python: v3.5.0.",
+        "This is a routine release. The curriculum search found nothing matching these specific changes, which means the release notes do not affect material we teach -- not that the library is uncovered.",
+        "Re-check if a later release announces a breaking change."
+      ],
+      "match": null,
+      "total_score": 3.0
+    },
+    {
+      "trend": "langchain-ai/langchain: langchain-anthropic==1.7.1",
+      "confidence": 0.4,
+      "verification_note": "The project 'langchain-ai/langchain' exists and has a significant star count, indicating popularity. However, the specific version 'langchain-anthropic==1.7.1' does not appear in the GitHub releases; instead, '1.7.2' is the latest version.",
+      "evidence": [
+        {
+          "source": "https://github.com/langchain-ai/langchain",
+          "tier": "primary",
+          "url": "",
+          "note": "The repository exists and is actively maintained."
+        },
+        {
+          "source": "https://github.com/langchain-ai/langchain/releases",
+          "tier": "primary",
+          "url": "",
+          "note": "The claimed version '1.7.1' was not found in the releases."
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: langchain-ai/langchain: langchain-anthropic==1.7.1.",
+        "This is a routine release. The curriculum search found nothing matching these specific changes, which means the release notes do not affect material we teach -- not that the library is uncovered.",
+        "Re-check if a later release announces a breaking change."
+      ],
+      "match": null,
+      "total_score": 1.5
+    },
+    {
+      "trend": "langchain-ai/langchain: langchain==1.3.18",
+      "confidence": 0.4,
+      "verification_note": "The project 'langchain' by 'langchain-ai' exists and has a significant number of stars, indicating popularity. However, the claimed version '1.3.18' was not found among the releases, leading to uncertainty about its validity.",
+      "evidence": [
+        {
+          "source": "https://github.com/langchain-ai/langchain",
+          "tier": "primary",
+          "url": "",
+          "note": "The repository exists, with last push date indicating it is actively maintained."
+        },
+        {
+          "source": "https://github.com/langchain-ai/langchain/releases",
+          "tier": "primary",
+          "url": "",
+          "note": "The claimed release 1.3.18 does not appear in the recent tags."
+        }
+      ],
+      "recommended_action": "watch",
+      "action_plan": [
+        "Keep monitoring: langchain-ai/langchain: langchain==1.3.18.",
+        "This is a routine release. The curriculum search found nothing matching these specific changes, which means the release notes do not affect material we teach -- not that the library is uncovered.",
+        "Re-check if a later release announces a breaking change."
+      ],
+      "match": null,
+      "total_score": 1.5
+    }
+  ]
+}

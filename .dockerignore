@@ -1,0 +1,30 @@
+# Secrets: passed at run time through docker-compose's env_file, never baked in
+.env
+.env.*
+!.env.example
+
+# Course material and the index built from it: not redistributed (mounted instead)
+vectorstore/
+vectorstore_v*/
+01_data/curriculum/
+
+# Local state and caches
+01_data/.tool_cache/
+01_data/reviews.json
+01_data/reviews.tmp
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.log
+
+# Not needed to run C-Sync
+.git/
+.claude/
+plans/
+# 03_assets: only the logo is used by C-Sync (the sidebar mark)
+03_assets/*
+!03_assets/logo/
+Dockerfile
+docker-compose.yml
+.dockerignore

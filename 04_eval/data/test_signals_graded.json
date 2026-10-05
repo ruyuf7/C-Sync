@@ -1,0 +1,264 @@
+[
+  {
+    "title": "langchain-ai/langchain: langchain==1.4.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "Changes since langchain==1.3.18 docs(langchain): runnable `langchain.mcp` examples (#39976) feat(langchain): `langchain.mcp` namespace, `MCPAdapter` (#39939) perf(anthropic,langchain): omit middleware trace inputs (#40098) fix(langchain): include model destination in agent tool routing (#38355) chore(langchain): bump vcrpy test dependency minimum to `>=8.2.0` (#39942)",
+    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.0",
+    "published": "2026-09-03T16:59:53Z",
+    "gold": {
+      "is_genuine": true,
+      "confidence": 0.8,
+      "stale_presented_as_new": false,
+      "rank": 2,
+      "maturity": 4,
+      "relevance": 3,
+      "action_tier": "add_optional_content",
+      "event_id": "evt-mcp-namespace",
+      "is_fabricated": false,
+      "no_match_expected": false,
+      "acceptable_citations": [
+        "Week 4 / Agents for Real Tasks.pptx / slide 53",
+        "Week 4 / Agents for Real Tasks.pptx / slide 54"
+      ]
+    }
+  },
+  {
+    "title": "MCP in LangChain: Stateless Protocol, Elicitation, and More!",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "MCP support now lives in langchain.mcp, built on FastMCP for the 2026-07-28 spec, with elicitation handled as a LangGraph interrupt and tool lists cached.",
+    "url": "https://www.langchain.com/blog/mcp-in-langchain-stateless-protocol-elicitation-and-more",
+    "published": "2026-09-04T03:13:59+00:00",
+    "gold": {
+      "is_genuine": true,
+      "confidence": 0.9,
+      "stale_presented_as_new": false,
+      "rank": 1,
+      "maturity": 5,
+      "relevance": 3,
+      "action_tier": "add_optional_content",
+      "event_id": "evt-mcp-namespace",
+      "is_fabricated": false,
+      "no_match_expected": false,
+      "acceptable_citations": [
+        "Week 4 / Agents for Real Tasks.pptx / slide 53",
+        "Week 4 / Agents for Real Tasks.pptx / slide 54"
+      ]
+    }
+  },
+  {
+    "title": "Announcing LangGraph v0.1 & LangGraph Cloud: Running agents at scale, reliably",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "Our new infrastructure for running agents at scale, LangGraph Cloud, is available in beta. We also have a new stable release of LangGraph.",
+    "url": "https://www.langchain.com/blog/langgraph-cloud",
+    "published": "2026-08-26T13:53:53+00:00",
+    "gold": {
+      "is_genuine": true,
+      "confidence": 0.8,
+      "stale_presented_as_new": null,
+      "rank": 4,
+      "maturity": 4,
+      "relevance": 2,
+      "action_tier": "watch",
+      "event_id": "evt-02",
+      "is_fabricated": false,
+      "no_match_expected": false,
+      "acceptable_citations": [
+        "Week 3 / Lab: Lab LangChain wikipedia(studentVersion) / cell 34"
+      ]
+    }
+  },
+  {
+    "title": "openai/openai-python: v3.10.0",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "## [3.10.0](https://github.com/openai/openai-python/compare/v3.9.0...v3.10.0) (2026-09-08) ### Features * **api:** add GPT Image 2.5 models and image options ([#3824](https://github.com/openai/openai-python/issues/3824)) ([5b39c45](https://github.com/openai/openai-python/commit/5b39c453ee5ee8f46fba0bd9cb4ae47fa5ee6d51)) * **api:** add service-account API key expiration fields ([#3802](https://github.com/openai/openai-python/issues/3802)) ([f1cd7f0](https://github.com/openai/openai-python/commit/f1cd7f020210ec3fc71699fc46d90320ddbb411c))",
+    "url": "https://github.com/openai/openai-python/releases/tag/v3.10.0",
+    "published": "2026-09-09T00:17:39Z",
+    "gold": {
+      "is_genuine": true,
+      "confidence": 0.8,
+      "stale_presented_as_new": false,
+      "rank": 10,
+      "maturity": 4,
+      "relevance": 1,
+      "action_tier": "watch",
+      "event_id": "evt-03",
+      "is_fabricated": false,
+      "no_match_expected": true,
+      "acceptable_citations": null
+    }
+  },
+  {
+    "title": "Funding grants for new research into AI and teen development",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+    "url": "https://openai.com/index/teen-development-research-grants",
+    "published": "2026-09-08T06:00:00+00:00",
+    "gold": {
+      "is_genuine": true,
+      "confidence": 0.8,
+      "stale_presented_as_new": false,
+      "rank": 5,
+      "maturity": 4,
+      "relevance": 1,
+      "action_tier": "watch",
+      "event_id": "evt-04",
+      "is_fabricated": false,
+      "no_match_expected": true,
+      "acceptable_citations": null
+    }
+  },
+  {
+    "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+    "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+    "published": "2026-09-07T21:00:00+00:00",
+    "gold": {
+      "is_genuine": true,
+      "confidence": 0.8,
+      "stale_presented_as_new": false,
+      "rank": 6,
+      "maturity": 4,
+      "relevance": 1,
+      "action_tier": "watch",
+      "event_id": "evt-05",
+      "is_fabricated": false,
+      "no_match_expected": true,
+      "acceptable_citations": null
+    }
+  },
+  {
+    "title": "Organizing Context in a Multi-Agent Harness",
+    "source": "langchain_blog",
+    "source_tier": "primary",
+    "summary": "Learn how context modes in deepagents help subagents fork a supervisor's context or start isolated — for faster, cheaper, more focused multi-agent work.",
+    "url": "https://www.langchain.com/blog/organizing-context-in-a-multi-agent-harness",
+    "published": "2026-09-08T15:07:23+00:00",
+    "gold": {
+      "is_genuine": true,
+      "confidence": 0.8,
+      "stale_presented_as_new": false,
+      "rank": 7,
+      "maturity": 4,
+      "relevance": 1,
+      "action_tier": "watch",
+      "event_id": "evt-06",
+      "is_fabricated": false,
+      "no_match_expected": true,
+      "acceptable_citations": null
+    }
+  },
+  {
+    "title": "An Alien Mind",
+    "source": "openai_blog",
+    "source_tier": "primary",
+    "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
+    "url": "https://openai.com/index/an-alien-mind",
+    "published": "2026-09-06T06:00:00+00:00",
+    "gold": {
+      "is_genuine": true,
+      "confidence": 0.8,
+      "stale_presented_as_new": false,
+      "rank": 3,
+      "maturity": 4,
+      "relevance": 2,
+      "action_tier": "watch",
+      "event_id": "evt-07",
+      "is_fabricated": false,
+      "no_match_expected": false,
+      "acceptable_citations": [
+        "Week 2 / AI Ethics / slide 59"
+      ]
+    }
+  },
+  {
+    "title": "langchain-ai/langchain: langchain-core==1.6.2",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "Changes since langchain-core==1.6.1 release(core): 1.6.2 (#40209) feat(openai): support async tools (#40208) chore(deps): bump mistune from 3.3.0 to 3.3.3 in /libs/core (#40150) chore(deps): bump tornado from 6.5.7 to 6.5.8 in /libs/core (#40113) fix(core): avoid mutation in google-genai standard content (#40023) fix(core): avoid mutation in bedrock converse standard content (#40022)",
+    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.2",
+    "published": "2026-09-04T21:29:42Z",
+    "gold": {
+      "is_genuine": true,
+      "confidence": 0.8,
+      "stale_presented_as_new": false,
+      "rank": 9,
+      "maturity": 4,
+      "relevance": 1,
+      "action_tier": "watch",
+      "event_id": "evt-08",
+      "is_fabricated": false,
+      "no_match_expected": true,
+      "acceptable_citations": null
+    }
+  },
+  {
+    "title": "langchain-ai/langchain: langchain-anthropic==1.7.1",
+    "source": "github",
+    "source_tier": "primary",
+    "summary": "Changes since langchain-anthropic==1.7.0 release(anthropic): 1.7.1 (#40181) perf(anthropic,langchain): omit middleware trace inputs (#40098) feat(anthropic): add Claude Fable 5.1 support (#40106)",
+    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.1",
+    "published": "2026-09-03T15:42:00Z",
+    "gold": {
+      "is_genuine": true,
+      "confidence": 0.8,
+      "stale_presented_as_new": false,
+      "rank": 8,
+      "maturity": 4,
+      "relevance": 1,
+      "action_tier": "watch",
+      "event_id": "evt-09",
+      "is_fabricated": false,
+      "no_match_expected": true,
+      "acceptable_citations": null
+    }
+  },
+  {
+    "title": "AgentTrace Protocol 2.0 becomes mandatory for all MCP server implementations",
+    "source": "tech_blog",
+    "source_tier": "secondary",
+    "summary": "A blog post states that AgentTrace Protocol 2.0 is now required for every MCP server. No specification, no repository, and no other outlet carries the claim.",
+    "url": "",
+    "published": "2026-09-05T00:00:00Z",
+    "gold": {
+      "is_genuine": false,
+      "confidence": 0.15,
+      "stale_presented_as_new": false,
+      "rank": 11,
+      "maturity": 1,
+      "relevance": 1,
+      "action_tier": "watch",
+      "event_id": "evt-10",
+      "is_fabricated": true,
+      "no_match_expected": true,
+      "acceptable_citations": null
+    }
+  },
+  {
+    "title": "VelocityAgent claims 12x faster tool calling than LangChain",
+    "source": "tweet",
+    "source_tier": "secondary",
+    "summary": "A single tweet thread claims VelocityAgent outperforms LangChain on tool dispatch by 12x. No benchmarks, no repository linked.",
+    "url": "",
+    "published": "2026-09-05T00:00:00Z",
+    "gold": {
+      "is_genuine": false,
+      "confidence": 0.15,
+      "stale_presented_as_new": false,
+      "rank": 12,
+      "maturity": 1,
+      "relevance": 1,
+      "action_tier": "watch",
+      "event_id": "evt-11",
+      "is_fabricated": true,
+      "no_match_expected": true,
+      "acceptable_citations": null
+    }
+  }
+]

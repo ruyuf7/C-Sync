@@ -1,0 +1,45 @@
+vectorstore/
+vectorstore_v*/
+**/__pycache__/
+*.pyc
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.log
+chroma.sqlite3*
+
+# local run outputs and caches
+01_data/.tool_cache/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+**/.tool_cache/
+tmp/
+temp/
+01_data/recommendations.json
+01_data/recs*.json
+
+# course materials live on Drive, not in Git
+01_data/curriculum/**/*.pdf
+01_data/curriculum/**/*.pptx
+01_data/curriculum/**/*.ipynb
+# Signals are a committed replay/input fixture.
+!01_data/signals.json
+
+# macOS noise
+**/.DS_Store
+
+# Claude Code local config and project skills (not shared)
+.claude/
+
+# instructor decisions recorded in C-Sync (local, per machine)
+01_data/reviews.json
+01_data/reviews.tmp
+
+# final report: submitted separately, kept local
+03_assets/report/
